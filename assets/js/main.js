@@ -1600,3 +1600,12 @@ carouselContainer.addEventListener("touchend", () => {
 
   startAutoAdvance();
 });
+
+
+
+
+
+
+// channel
+
+
