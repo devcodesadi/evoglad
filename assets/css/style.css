@@ -896,8 +896,8 @@ small.text {
     from(#7491f8),
     to(#80d3ff)
   );
-  background: -o-linear-gradient(left, #7491f8, #80d3ff);
-  background: linear-gradient(to right, #7491f8, #80d3ff);
+background: -o-linear-gradient(left, #c2f0e4, #e9f9f2);
+background: linear-gradient(to right, #c2f0e4, #e9f9f2);
   -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   -o-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
@@ -945,7 +945,7 @@ small.text {
   left: 0;
   top: 0;
   z-index: 999;
-  background-color: #0005;
+  background-color: #E9F9F2;
   display: none;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -1004,7 +1004,7 @@ small.text {
 #loading-content:before {
   content: "";
   position: absolute;
-  border: 3px solid #00f;
+  border: 3px solid #E9F9F2;
   left: 5px;
   right: 5px;
   top: 5px;
@@ -1022,8 +1022,8 @@ small.text {
 
 #loading-content:before {
   border: 3px solid transparent;
-  border-top-color: #0aafde;
-  border-bottom-color: #0aafde;
+  border-top-color: #E9F9F2;
+  border-bottom-color: #E9F9F2;
   border-radius: 50%;
   -webkit-animation: loader 3s linear infinite;
   animation: loader 3s linear infinite;
