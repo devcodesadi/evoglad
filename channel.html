@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Metas -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <meta
-      name="keywords"
-      content="HTML5 Template Iteck Multi-Purpose themeforest"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="keywords" content="HTML5 Template Iteck Multi-Purpose themeforest" />
     <meta name="description" content="Iteck - Multi-Purpose HTML5 Template" />
     <meta name="author" content="" />
 
@@ -19,30 +14,20 @@
     <title>Evoglad | Engage. Automate. Grow.</title>
 
     <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      href="assets/img/logos/evoglad_icon.png"
-      title="Favicon"
-      sizes="16x16"
-    />
+    <link rel="shortcut icon" href="assets/img/logos/evoglad_icon.png" title="Favicon" sizes="16x16" />
 
     <!-- ====== bootstrap icons cdn ====== -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
-      integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- bootstrap 5 -->
     <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css" />
 
     <!-- ====== font family ====== -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
 
     <link rel="stylesheet" href="assets/css/lib/all.min.css" />
     <link rel="stylesheet" href="assets/css/lib/animate.css" />
@@ -51,20 +36,20 @@
     <link rel="stylesheet" href="assets/css/lib/swiper.min.css" />
     <!-- ====== global style ====== -->
     <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
+</head>
 
-  <body class="home-onePage">
+<body class="home-onePage">
     <!-- ====== start loading page ====== -->
     <!-- <div id="preloader">
     </div> -->
     <!-- ---------- loader ---------- -->
     <div id="preloader">
-      <div id="loading-wrapper" class="show">
-        <div id="loading-text">
-          <img src="assets/img/logos/evoglad_icon.png" alt="" />
+        <div id="loading-wrapper" class="show">
+            <div id="loading-text">
+                <img src="assets/img/logos/evoglad_icon.png" alt="" />
+            </div>
+            <div id="loading-content"></div>
         </div>
-        <div id="loading-content"></div>
-      </div>
     </div>
     <!-- ====== end loading page ====== -->
 
@@ -72,7 +57,7 @@
     <nav class="navbar navbar-expand-lg navbar-light style-4" id="main-nav">
       <div class="container">
         <a class="navbar-brand" href="#" data-scroll-nav="0">
-          <img src="assets/img/logos/evoglad_logo.png" alt="" />
+          <img src="assets/img/logos/evoglad_logo.png" alt="Evoglad Logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -85,35 +70,96 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-uppercase">
+            <!-- Home -->
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+
+            <!-- Channels Dropdown -->
             <li class="nav-item dropdown">
-              <a class="nav-link active" href="index.html"> Home </a>
+              <a class="nav-link dropdown-toggle" dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"> Channels </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#whatsapp"
+                    >WhatsApp</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#facebook">Facebook</a>
+                </li>
+                <li><a class="dropdown-item" href="#instagram">Instagram</a></li>
+                <li><a class="dropdown-item" href="#telegram">Telegram</a></li>
+                <li><a class="dropdown-item" href="#website">Website</a></li>
+              </ul>
             </li>
+
+            <!-- Integration -->
             <li class="nav-item">
-              <a class="nav-link" href="channel.html" data-scroll-nav="1"> Channels </a>
+              <a class="nav-link" href="index.html#integration">Integration</a>
             </li>
+
+            <!-- Features Dropdown -->
             <li class="nav-item">
-              <a class="nav-link" href="#0" data-scroll-nav="2">
-                Integration
+              <a class="nav-link" href="index.html#features"> Features </a>
+            </li>
+
+            <!-- Services Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Services
               </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="index.html#what-we-offer"
+                    >What We Offer</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html#how-we-help">How We Help</a>
+                </li>
+                <li><a class="dropdown-item" href="index.html#faq">F.A.Q</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#0" data-scroll-nav="3"> Features </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#0" data-scroll-nav="4"> Services </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#0" data-scroll-nav="5"> About </a>
+
+            <!-- About Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                About
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html#about-us">About Us</a></li>
+                <li>
+                  <a class="dropdown-item" href="index.html#why-choose-us"
+                    >Why Choose Us</a
+                  >
+                </li>
+                
+                <li>
+                  <a class="dropdown-item" href="index.html#how-it-works">How It Works</a>
+                </li>
+              </ul>
             </li>
           </ul>
+
+          <!-- CTA Button -->
           <div class="nav-side">
             <div class="d-flex align-items-center">
               <a
-                href="#0"
+                href="#book-consultation"
                 class="btn rounded-pill brd-gray hover-blue4 sm-butn fw-bold"
-                data-scroll-nav="8"
               >
                 <span
                   ><i class="fas fa-calendar-check me-2 pe-2 border-end"></i>
@@ -129,430 +175,573 @@
 
     <!-- ====== start header ====== -->
 
-    
     <!-- ====== end header ====== -->
 
     <!--Contents-->
     <main>
-
         <div class="container">
-        <!-- Header Section -->
-        <section class="section-padding text-center">
-            <h1 class="floating">Connect Every Channel</h1>
-            <p>Unify your customer conversations across all major messaging platforms. <br> From WhatsApp to Instagram, reach your audience where they are with Evoglad's powerful automation.</p>
-        </section>
+            <!-- Header Section -->
+            <section class="section-padding text-center">
+                <div class="section-head style-4">
 
-        <!-- WhatsApp Section -->
-        <section class="channel-section whatsapp fade-in">
-            <div class="channel-header">
-                <div class="channel-icon-large">
-                    
-                <img src="assets/img/integ/whatsapp.svg" alt=""  />
-
+                    <h2 class="floating">
+                        Connect Every <span>Channel</span>
+                    </h2>
                 </div>
-                <div class="channel-title-info">
-                    <h2 class="floating">WhatsApp</h2>
-                    <div class="channel-tagline">Talk. Engage. Convert. — All on WhatsApp.</div>
-                    <div class="channel-subtitle">WhatsApp Chatbot Marketing Automated Workflows for E-commerce Success</div>
-                    <div class="channel-main-description">
-                        Elevate your WhatsApp Business with Evoglad's powerful features. Automate customer support, lead generation, and sales with an easy setup. Simply connect your WhatsApp Cloud API and follow our step-by-step guide for seamless integration.
+
+                <p>
+                    Unify your customer conversations across all major messaging
+                    platforms. <br />
+                    From WhatsApp to Instagram, reach your audience where they are with
+                    Evoglad's powerful automation.
+                </p>
+            </section>
+
+            <!-- WhatsApp Section -->
+            <section id="whatsapp" class="channel-section whatsapp fade-in">
+                <div class="channel-header">
+                    <div class="channel-icon-large">
+                        <img src="assets/img/integ/whatsapp.svg" alt="" />
+                    </div>
+                    <div class="channel-title-info">
+                        <h2 class="floating">WhatsApp</h2>
+                        <div class="channel-tagline">
+                            Talk. Engage. Convert. — All on WhatsApp.
+                        </div>
+                        <div class="channel-subtitle">
+                            WhatsApp Chatbot Marketing Automated Workflows for E-commerce
+                            Success
+                        </div>
+                        <div class="channel-main-description">
+                            Elevate your WhatsApp Business with Evoglad's powerful features.
+                            Automate customer support, lead generation, and sales with an
+                            easy setup. Simply connect your WhatsApp Cloud API and follow
+                            our step-by-step guide for seamless integration.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="channel-grid">
-                <div class="channel-card">
-                    <div class="channel-icon">🤖</div>
-                    <h3>Advanced Bot Manager</h3>
-                    <p>Create a custom WhatsApp chatbot with Evoglad's intuitive drag-and-drop builder. No coding required! Automate replies, collect subscriber data, set up product sections, and assign conversations to agents—all within one user-friendly platform.</p>
-                </div>
+                <div class="channel-grid">
+                    <div class="channel-card">
+                        <div class="channel-icon">🤖</div>
+                        <h3>Advanced Bot Manager</h3>
+                        <p>
+                            Create a custom WhatsApp chatbot with Evoglad's intuitive
+                            drag-and-drop builder. No coding required! Automate replies,
+                            collect subscriber data, set up product sections, and assign
+                            conversations to agents—all within one user-friendly platform.
+                        </p>
+                    </div>
 
-                <div class="channel-card">
-                    <div class="channel-icon">👥</div>
-                    <h3>Dynamic Subscriber Manager</h3>
-                    <p>Effortlessly manage, segment, and engage with your customers. Use filters to find and connect with valuable leads, and export data for targeted campaigns. Personalize messages to boost conversions and simplify your workflow.</p>
-                </div>
+                    <div class="channel-card">
+                        <div class="channel-icon">👥</div>
+                        <h3>Dynamic Subscriber Manager</h3>
+                        <p>
+                            Effortlessly manage, segment, and engage with your customers.
+                            Use filters to find and connect with valuable leads, and export
+                            data for targeted campaigns. Personalize messages to boost
+                            conversions and simplify your workflow.
+                        </p>
+                    </div>
 
-                <div class="channel-card">
-                    <div class="channel-icon">📢</div>
-                    <h3>WhatsApp Broadcasting</h3>
-                    <p>Boost engagement and sales with targeted messaging. Track real-time metrics like delivery, open rates, and failures to optimize your WhatsApp campaigns. Gain insights into message status to refine your strategy and maximize reach.</p>
-                </div>
+                    <div class="channel-card">
+                        <div class="channel-icon">📢</div>
+                        <h3>WhatsApp Broadcasting</h3>
+                        <p>
+                            Boost engagement and sales with targeted messaging. Track
+                            real-time metrics like delivery, open rates, and failures to
+                            optimize your WhatsApp campaigns. Gain insights into message
+                            status to refine your strategy and maximize reach.
+                        </p>
+                    </div>
 
-                <div class="channel-card">
-                    <div class="channel-icon">💬</div>
-                    <h3>Live Chat</h3>
-                    <p>Provide real-time support with Evoglad's Live Chat feature. Instantly respond to customer queries, translate messages, and track agent assignments. Organize conversations to enhance customer satisfaction and loyalty.</p>
-                </div>
+                    <div class="channel-card">
+                        <div class="channel-icon">💬</div>
+                        <h3>Live Chat</h3>
+                        <p>
+                            Provide real-time support with Evoglad's Live Chat feature.
+                            Instantly respond to customer queries, translate messages, and
+                            track agent assignments. Organize conversations to enhance
+                            customer satisfaction and loyalty.
+                        </p>
+                    </div>
 
-                <div class="channel-card">
-                    <div class="channel-icon">⚡</div>
-                    <h3>Webhook Workflow</h3>
-                    <p>Maximize eCommerce efficiency with automated workflows. Integrate systems like Shopify and WooCommerce for timely, personalized communication that drives sales and customer satisfaction.</p>
-                </div>
+                    <div class="channel-card">
+                        <div class="channel-icon">⚡</div>
+                        <h3>Webhook Workflow</h3>
+                        <p>
+                            Maximize eCommerce efficiency with automated workflows.
+                            Integrate systems like Shopify and WooCommerce for timely,
+                            personalized communication that drives sales and customer
+                            satisfaction.
+                        </p>
+                    </div>
 
-                <div class="channel-card">
-                    <div class="channel-icon">🛍️</div>
-                    <h3>WhatsApp Catalog Integration</h3>
-                    <p>Showcase your products with Evoglad's WhatsApp Catalog. Display high-quality images, real-time pricing, availability, and payment options, all while simplifying the buying process with integrated payment gateways.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Facebook Section -->
-        <section class="channel-section facebook fade-in">
-            <div class="channel-header">
-                <div class="channel-icon-large">
-                    <img src="assets/img/integ/facebook.svg" alt=""  />
-                </div>
-                <div class="channel-title-info">
-                    <h2 class="floating">Facebook</h2>
-                    <div class="channel-tagline">Reach billions with intelligent messaging</div>
-                    <div class="channel-subtitle">Facebook Chatbot Marketing</div>
-                    <div class="channel-main-description">
-                        Reach your entire customer base on the platforms they use most. With billions of users on Facebook Messenger, Evoglad helps you automate responses and turn Messenger contacts into valuable leads. Respond with text, images, audio, video, or files to meet all business needs.
+                    <div class="channel-card">
+                        <div class="channel-icon">🛍️</div>
+                        <h3>WhatsApp Catalog Integration</h3>
+                        <p>
+                            Showcase your products with Evoglad's WhatsApp Catalog. Display
+                            high-quality images, real-time pricing, availability, and
+                            payment options, all while simplifying the buying process with
+                            integrated payment gateways.
+                        </p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="channel-grid">
-                <div class="channel-card">
-                    <div class="channel-icon">🛒</div>
-                    <h3>Sell More with Messenger</h3>
-                    <p>Showcase your products directly in Messenger. Use automated, tailored messages to share product details and provide purchase links, boosting conversions. Carousel replies make it easy for customers to scroll through and view multiple products.</p>
-                </div>
-
-                <div class="channel-card">
-                    <div class="channel-icon">📝</div>
-                    <h3>Collect User Information with User Input Flow</h3>
-                    <p>Evoglad's User Input Flow and Custom Fields allow you to gather customer information in a conversational manner. This data helps segment your audience and deliver personalized messages. Export the collected data for use across other platforms.</p>
-                </div>
-
-                <div class="channel-card">
-                    <div class="channel-icon">📅</div>
-                    <h3>Engage Subscribers with Follow-up Messages</h3>
-                    <p>Use sequence campaigns to keep customers engaged with valuable, relevant content over time. Automatically send messages for up to 30 days after a user opts in, keeping them connected to your brand.</p>
-                </div>
-
-                <div class="channel-card">
-                    <div class="channel-icon">🧠</div>
-                    <h3>AI Reply in Your Messenger Chatbot</h3>
-                    <p>Integrate ChatGPT into your Messenger bot for AI-generated responses. Use AI for "No Match" replies or any other part of your bot flow to ensure tailored, intelligent customer service.</p>
-                </div>
-
-                <div class="channel-card">
-                    <div class="channel-icon">🎯</div>
-                    <h3>Conditional Reply</h3>
-                    <p>Send personalized responses based on customer data, such as gender, age, or labels. Conditional replies ensure the right message reaches the right person, enhancing engagement.</p>
-                </div>
-
-                <div class="channel-card">
-                    <div class="channel-icon">🎲</div>
-                    <h3>Persistent Menu and Icebreakers</h3>
-                    <p>The Persistent Menu and Icebreakers help initiate conversations with new subscribers. The menu makes it easy for users to navigate, while Icebreakers provide automated answers to frequently asked questions, engaging customers from the start.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Instagram Section -->
-        <section class="channel-section instagram fade-in">
-            <div class="channel-header">
-                <div class="channel-icon-large">
-                    
-                <img src="assets/img/integ/instagram.svg" alt=""  />
-              
-                </div>
-                <div class="channel-title-info">
-                    <h2 class="floating">Instagram</h2>
-                    <div class="channel-tagline">Visual storytelling meets automation</div>
-                    <div class="channel-subtitle">Instagram Chatbot Marketing AI-Powered Response for Faster DMs</div>
-                    <div class="channel-main-description">
-                        Evoglad's AI chatbot integration helps you respond to Instagram DMs instantly. Your customers will experience seamless interactions, whether with you or a bot—saving time and money while boosting efficiency.
+            <!-- Facebook Section -->
+            <section id="facebook" class="channel-section facebook fade-in">
+                <div class="channel-header">
+                    <div class="channel-icon-large">
+                        <img src="assets/img/channel/channel_facebook.svg" alt="" />
+                    </div>
+                    <div class="channel-title-info">
+                        <h2 class="floating">Facebook</h2>
+                        <div class="channel-tagline">
+                            Reach billions with intelligent messaging
+                        </div>
+                        <div class="channel-subtitle">Facebook Chatbot Marketing</div>
+                        <div class="channel-main-description">
+                            Reach your entire customer base on the platforms they use most.
+                            With billions of users on Facebook Messenger, Evoglad helps you
+                            automate responses and turn Messenger contacts into valuable
+                            leads. Respond with text, images, audio, video, or files to meet
+                            all business needs.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="channel-grid">
-                <div class="channel-card">
-                    <div class="channel-icon">💌</div>
-                    <h3>Direct Messages (DM) - Nurture Leads to Sales</h3>
-                    <p>Build relationships with leads through valuable content and support. Assign multiple agents to manage different leads, helping you scale customer engagement and increase sales.</p>
-                </div>
+                <div class="channel-grid">
+                    <div class="channel-card">
+                        <div class="channel-icon">🛒</div>
+                        <h3>Sell More with Messenger</h3>
+                        <p>
+                            Showcase your products directly in Messenger. Use automated,
+                            tailored messages to share product details and provide purchase
+                            links, boosting conversions. Carousel replies make it easy for
+                            customers to scroll through and view multiple products.
+                        </p>
+                    </div>
 
-                <div class="channel-card">
-                    <div class="channel-icon">🚀</div>
-                    <h3>Automate Your Sales Funnel</h3>
-                    <p>Increase sales by automating your sales funnel. BotSailor handles background tasks like sending coupons or sharing information, freeing up your sales team to focus on complex deals.</p>
-                </div>
+                    <div class="channel-card">
+                        <div class="channel-icon">📝</div>
+                        <h3>Collect User Information with User Input Flow</h3>
+                        <p>
+                            Evoglad's User Input Flow and Custom Fields allow you to gather
+                            customer information in a conversational manner. This data helps
+                            segment your audience and deliver personalized messages. Export
+                            the collected data for use across other platforms.
+                        </p>
+                    </div>
 
-                <div class="channel-card">
-                    <div class="channel-icon">🎨</div>
-                    <h3>Visual Flow Builder</h3>
-                    <p>Create Instagram chatbots with ease using the drag-and-drop interface, no coding needed. Design complex conversation flows visually and intuitively.</p>
-                </div>
+                    <div class="channel-card">
+                        <div class="channel-icon">📅</div>
+                        <h3>Engage Subscribers with Follow-up Messages</h3>
+                        <p>
+                            Use sequence campaigns to keep customers engaged with valuable,
+                            relevant content over time. Automatically send messages for up
+                            to 30 days after a user opts in, keeping them connected to your
+                            brand.
+                        </p>
+                    </div>
 
-                <div class="channel-card">
-                    <div class="channel-icon">💬</div>
-                    <h3>Live Chat</h3>
-                    <p>Use live chat for personalized interactions, assign agents, send message templates, and translate messages—all within BotSailor.</p>
-                </div>
+                    <div class="channel-card">
+                        <div class="channel-icon">🧠</div>
+                        <h3>AI Reply in Your Messenger Chatbot</h3>
+                        <p>
+                            Integrate ChatGPT into your Messenger bot for AI-generated
+                            responses. Use AI for "No Match" replies or any other part of
+                            your bot flow to ensure tailored, intelligent customer service.
+                        </p>
+                    </div>
 
-                <div class="channel-card">
-                    <div class="channel-icon">📨</div>
-                    <h3>Sequence Messages</h3>
-                    <p>Automate series of messages at scheduled intervals to enhance lead nurturing, customer engagement, and marketing efforts.</p>
-                </div>
+                    <div class="channel-card">
+                        <div class="channel-icon">🎯</div>
+                        <h3>Conditional Reply</h3>
+                        <p>
+                            Send personalized responses based on customer data, such as
+                            gender, age, or labels. Conditional replies ensure the right
+                            message reaches the right person, enhancing engagement.
+                        </p>
+                    </div>
 
-                <div class="channel-card">
-                    <div class="channel-icon">📊</div>
-                    <h3>Subscriber Management</h3>
-                    <p>Collect and organize subscriber data (phone numbers, emails, etc.) with ease, and assign labels for targeted campaigns.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Telegram Section -->
-        <section class="channel-section telegram fade-in">
-            <div class="channel-header">
-                <div class="channel-icon-large">
-                    <img src="assets/img/integ/telegram.svg" alt=""  />
-                </div>
-                <div class="channel-title-info">
-                    <h2 class="floating">Telegram</h2>
-                    <div class="channel-tagline">Secure, fast, and feature-rich messaging</div>
-                    <div class="channel-subtitle">Telegram Chatbot Marketing Boost Engagement with Evoglad's Telegram Integration</div>
-                    <div class="channel-main-description">
-                        Start automating your Telegram chats with ease. Check out our step-by-step guide and video tutorial to get started today!
+                    <div class="channel-card">
+                        <div class="channel-icon">🎲</div>
+                        <h3>Persistent Menu and Icebreakers</h3>
+                        <p>
+                            The Persistent Menu and Icebreakers help initiate conversations
+                            with new subscribers. The menu makes it easy for users to
+                            navigate, while Icebreakers provide automated answers to
+                            frequently asked questions, engaging customers from the start.
+                        </p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="channel-grid">
-                <div class="channel-card">
-                    <div class="channel-icon">🤖</div>
-                    <h3>Empowering Bot Management</h3>
-                    <p>Easily manage multiple bots with Evoglad's intuitive Bot Manager. Monitor performance metrics, gain actionable insights, and enjoy 24/7 support, all while ensuring security and reliability.</p>
-                </div>
-
-                <div class="channel-card">
-                    <div class="channel-icon">👥</div>
-                    <h3>Optimize Your Telegram Community with Group Manager</h3>
-                    <p>Automate moderation, greet new members with customizable messages, and manage memberships smoothly. Schedule posts, send announcements, and monitor group activity with advanced tools and analytics.</p>
-                </div>
-
-                <div class="channel-card">
-                    <div class="channel-icon">📈</div>
-                    <h3>Grow and Engage Your Audience with Subscriber Manager</h3>
-                    <p>Effortlessly segment and target your subscribers. Use automated workflows and comprehensive reporting to build stronger relationships and increase your reach.</p>
-                </div>
-
-                <div class="channel-card">
-                    <div class="channel-icon">📡</div>
-                    <h3>Amplify Your Reach with Telegram Broadcast</h3>
-                    <p>Send personalized broadcasts with Evoglad's easy-to-use interface. Schedule messages for optimal delivery times, ensuring your announcements and updates reach your audience at the right moment.</p>
-                </div>
-
-                <div class="channel-card">
-                    <div class="channel-icon">💬</div>
-                    <h3>Enhance Support with Real-Time Live Chat</h3>
-                    <p>Resolve customer queries instantly with Evoglad's Live Chat. Handle high volumes of inquiries, track interactions, and provide efficient support with multi-agent collaboration.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Website Chat Section -->
-        <section class="channel-section webchat fade-in">
-            <div class="channel-header">
-                <div class="channel-icon-large">
-                    <img src="assets/img/integ/website.svg" alt=""  />
-                </div>
-                <div class="channel-title-info">
-                    <h2 class="floating">Website Chat</h2>
-                    <div class="channel-tagline">Convert visitors into customers instantly</div>
-                    <div class="channel-subtitle">Website Chatbot Marketing Enhance Your Website's Customer Experience with WebChat</div>
-                    <div class="channel-main-description">
-                        WebChat offers seamless, real-time chat support to instantly engage with visitors and provide personalized assistance. Check out our guide to set up WebChat and start connecting with your audience today!
+            <!-- Instagram Section -->
+            <section id="instagram" class="channel-section instagram fade-in">
+                <div class="channel-header">
+                    <div class="channel-icon-large">
+                        <img src="assets/img/integ/instagram.svg" alt="" />
+                    </div>
+                    <div class="channel-title-info">
+                        <h2 class="floating">Instagram</h2>
+                        <div class="channel-tagline">
+                            Visual storytelling meets automation
+                        </div>
+                        <div class="channel-subtitle">
+                            Instagram Chatbot Marketing AI-Powered Response for Faster DMs
+                        </div>
+                        <div class="channel-main-description">
+                            Evoglad's AI chatbot integration helps you respond to Instagram
+                            DMs instantly. Your customers will experience seamless
+                            interactions, whether with you or a bot—saving time and money
+                            while boosting efficiency.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="channel-grid">
-                <div class="channel-card">
-                    <div class="channel-icon">💬</div>
-                    <h3>Seamless Website Chat Support</h3>
-                    <p>Provide frictionless, real-time communication with WebChat. Ensure swift, responsive support, whether answering technical questions or simple inquiries, to build trust and enhance your brand's reputation.</p>
+                <div class="channel-grid">
+                    <div class="channel-card">
+                        <div class="channel-icon">💌</div>
+                        <h3>Direct Messages (DM) - Nurture Leads to Sales</h3>
+                        <p>
+                            Build relationships with leads through valuable content and
+                            support. Assign multiple agents to manage different leads,
+                            helping you scale customer engagement and increase sales.
+                        </p>
+                    </div>
+
+                    <div class="channel-card">
+                        <div class="channel-icon">🚀</div>
+                        <h3>Automate Your Sales Funnel</h3>
+                        <p>
+                            Increase sales by automating your sales funnel. BotSailor
+                            handles background tasks like sending coupons or sharing
+                            information, freeing up your sales team to focus on complex
+                            deals.
+                        </p>
+                    </div>
+
+                    <div class="channel-card">
+                        <div class="channel-icon">🎨</div>
+                        <h3>Visual Flow Builder</h3>
+                        <p>
+                            Create Instagram chatbots with ease using the drag-and-drop
+                            interface, no coding needed. Design complex conversation flows
+                            visually and intuitively.
+                        </p>
+                    </div>
+
+                    <div class="channel-card">
+                        <div class="channel-icon">💬</div>
+                        <h3>Live Chat</h3>
+                        <p>
+                            Use live chat for personalized interactions, assign agents, send
+                            message templates, and translate messages—all within BotSailor.
+                        </p>
+                    </div>
+
+                    <div class="channel-card">
+                        <div class="channel-icon">📨</div>
+                        <h3>Sequence Messages</h3>
+                        <p>
+                            Automate series of messages at scheduled intervals to enhance
+                            lead nurturing, customer engagement, and marketing efforts.
+                        </p>
+                    </div>
+
+                    <div class="channel-card">
+                        <div class="channel-icon">📊</div>
+                        <h3>Subscriber Management</h3>
+                        <p>
+                            Collect and organize subscriber data (phone numbers, emails,
+                            etc.) with ease, and assign labels for targeted campaigns.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Telegram Section -->
+            <section id="telegram" class="channel-section telegram fade-in">
+                <div class="channel-header">
+                    <div class="channel-icon-large">
+                        <img src="assets/img/integ/telegram.svg" alt="" />
+                    </div>
+                    <div class="channel-title-info">
+                        <h2 class="floating">Telegram</h2>
+                        <div class="channel-tagline">
+                            Secure, fast, and feature-rich messaging
+                        </div>
+                        <div class="channel-subtitle">
+                            Telegram Chatbot Marketing Boost Engagement with Evoglad's
+                            Telegram Integration
+                        </div>
+                        <div class="channel-main-description">
+                            Start automating your Telegram chats with ease. Check out our
+                            step-by-step guide and video tutorial to get started today!
+                        </div>
+                    </div>
                 </div>
 
-                <div class="channel-card">
-                    <div class="channel-icon">📊</div>
-                    <h3>Streamlined Subscriber Management</h3>
-                    <p>Easily manage visitors and convert them into loyal subscribers. Track interactions, engage with personalized responses, and nurture leads into customers, strengthening long-term relationships and boosting retention.</p>
+                <div class="channel-grid">
+                    <div class="channel-card">
+                        <div class="channel-icon">🤖</div>
+                        <h3>Empowering Bot Management</h3>
+                        <p>
+                            Easily manage multiple bots with Evoglad's intuitive Bot
+                            Manager. Monitor performance metrics, gain actionable insights,
+                            and enjoy 24/7 support, all while ensuring security and
+                            reliability.
+                        </p>
+                    </div>
+
+                    <div class="channel-card">
+                        <div class="channel-icon">👥</div>
+                        <h3>Optimize Your Telegram Community with Group Manager</h3>
+                        <p>
+                            Automate moderation, greet new members with customizable
+                            messages, and manage memberships smoothly. Schedule posts, send
+                            announcements, and monitor group activity with advanced tools
+                            and analytics.
+                        </p>
+                    </div>
+
+                    <div class="channel-card">
+                        <div class="channel-icon">📈</div>
+                        <h3>Grow and Engage Your Audience with Subscriber Manager</h3>
+                        <p>
+                            Effortlessly segment and target your subscribers. Use automated
+                            workflows and comprehensive reporting to build stronger
+                            relationships and increase your reach.
+                        </p>
+                    </div>
+
+                    <div class="channel-card">
+                        <div class="channel-icon">📡</div>
+                        <h3>Amplify Your Reach with Telegram Broadcast</h3>
+                        <p>
+                            Send personalized broadcasts with Evoglad's easy-to-use
+                            interface. Schedule messages for optimal delivery times,
+                            ensuring your announcements and updates reach your audience at
+                            the right moment.
+                        </p>
+                    </div>
+
+                    <div class="channel-card">
+                        <div class="channel-icon">💬</div>
+                        <h3>Enhance Support with Real-Time Live Chat</h3>
+                        <p>
+                            Resolve customer queries instantly with Evoglad's Live Chat.
+                            Handle high volumes of inquiries, track interactions, and
+                            provide efficient support with multi-agent collaboration.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Website Chat Section -->
+            <section id="website" class="channel-section webchat fade-in">
+                <div class="channel-header">
+                    <div class="channel-icon-large">
+                        <img src="assets/img/integ/website.svg" alt="" />
+                    </div>
+                    <div class="channel-title-info">
+                        <h2 class="floating">Website Chat</h2>
+                        <div class="channel-tagline">
+                            Convert visitors into customers instantly
+                        </div>
+                        <div class="channel-subtitle">
+                            Website Chatbot Marketing Enhance Your Website's Customer
+                            Experience with WebChat
+                        </div>
+                        <div class="channel-main-description">
+                            WebChat offers seamless, real-time chat support to instantly
+                            engage with visitors and provide personalized assistance. Check
+                            out our guide to set up WebChat and start connecting with your
+                            audience today!
+                        </div>
+                    </div>
                 </div>
 
-                <div class="channel-card">
-                    <div class="channel-icon">🚀</div>
-                    <h3>Boost Visitor Engagement</h3>
-                    <p>Engage visitors instantly upon arrival. Answer questions, guide them through your site, and reduce bounce rates by improving user experience. WebChat helps convert interest into action by providing timely support and assistance.</p>
+                <div class="channel-grid">
+                    <div class="channel-card">
+                        <div class="channel-icon">💬</div>
+                        <h3>Seamless Website Chat Support</h3>
+                        <p>
+                            Provide frictionless, real-time communication with WebChat.
+                            Ensure swift, responsive support, whether answering technical
+                            questions or simple inquiries, to build trust and enhance your
+                            brand's reputation.
+                        </p>
+                    </div>
+
+                    <div class="channel-card">
+                        <div class="channel-icon">📊</div>
+                        <h3>Streamlined Subscriber Management</h3>
+                        <p>
+                            Easily manage visitors and convert them into loyal subscribers.
+                            Track interactions, engage with personalized responses, and
+                            nurture leads into customers, strengthening long-term
+                            relationships and boosting retention.
+                        </p>
+                    </div>
+
+                    <div class="channel-card">
+                        <div class="channel-icon">🚀</div>
+                        <h3>Boost Visitor Engagement</h3>
+                        <p>
+                            Engage visitors instantly upon arrival. Answer questions, guide
+                            them through your site, and reduce bounce rates by improving
+                            user experience. WebChat helps convert interest into action by
+                            providing timely support and assistance.
+                        </p>
+                    </div>
+
+                    <div class="channel-card">
+                        <div class="channel-icon">⚡</div>
+                        <h3>Real-Time Assistance with Live Chat</h3>
+                        <p>
+                            Offer instant support with WebChat's Live Chat feature. Fast
+                            response times and an easy-to-use interface ensure your
+                            customers receive immediate assistance, increasing satisfaction
+                            and building brand loyalty.
+                        </p>
+                    </div>
                 </div>
-
-                <div class="channel-card">
-                    <div class="channel-icon">⚡</div>
-                    <h3>Real-Time Assistance with Live Chat</h3>
-                    <p>Offer instant support with WebChat's Live Chat feature. Fast response times and an easy-to-use interface ensure your customers receive immediate assistance, increasing satisfaction and building brand loyalty.</p>
-                </div>
-            </div>
-        </section>
-
-
-
+            </section>
+        </div>
     </main>
     <!--End-Contents-->
 
     <!-- ====== start footer ====== -->
     <footer class="style-4" data-scroll-index="8">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="section-head style-4">
-              <h2 class="mb-10">
-                Ready to Supercharge Your Business with <br />
-                <span> WhatsApp Automation? </span>
-              </h2>
-              <p>
-                Transform your customer experience with intelligent, real-time
-                <br />
-                communication — faster, smarter, and more personal.
-              </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-head style-4">
+                        <h2 class="mb-10">
+                            Ready to Supercharge Your Business with <br />
+                            <span> WhatsApp Automation? </span>
+                        </h2>
+                        <p>
+                            Transform your customer experience with intelligent, real-time
+                            <br />
+                            communication — faster, smarter, and more personal.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="cta-form-container">
+                        <div class="cta-form-header"></div>
+                        <h3 class="section-header">
+                            Get started in
+
+                            <span> 2 minutes. </span>
+                        </h3>
+
+                        <form class="cta-form" id="consultationForm">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Full Name" required />
+                                <i class="fas fa-user form-icon"></i>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="tel" class="form-control" placeholder="Phone Number" required />
+                                <i class="fas fa-phone form-icon"></i>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Company Name" required />
+                                <i class="fas fa-building form-icon"></i>
+                            </div>
+
+                            <div class="form-group">
+                                <select class="form-control" required>
+                                    <option value="">Business Size</option>
+                                    <option value="startup">Startup (1-10 employees)</option>
+                                    <option value="small">
+                                        Small Business (11-50 employees)
+                                    </option>
+                                    <option value="medium">
+                                        Medium Business (51-200 employees)
+                                    </option>
+                                    <option value="enterprise">
+                                        Enterprise (200+ employees)
+                                    </option>
+                                </select>
+                                <i class="fas fa-users form-icon"></i>
+                            </div>
+
+                            <button type="submit" class="btn-cta">
+                                <span class="btn-text">Book Free Consultation</span>
+                                <i class="fas fa-arrow-right btn-icon"></i>
+                                <div class="btn-bg"></div>
+                            </button>
+
+                            <p class="form-disclaimer">
+                                <i class="fas fa-lock"></i>
+                                Your information is secure and will never be shared
+                            </p>
+                        </form>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="cta-form-container">
-              <div class="cta-form-header"></div>
-              <h3 class="section-header">
-                Get started in
-
-                <span> 2 minutes. </span>
-              </h3>
-
-              <form class="cta-form" id="consultationForm">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Full Name"
-                    required
-                  />
-                  <i class="fas fa-user form-icon"></i>
-                </div>
-
-                <div class="form-group">
-                  <input
-                    type="tel"
-                    class="form-control"
-                    placeholder="Phone Number"
-                    required
-                  />
-                  <i class="fas fa-phone form-icon"></i>
-                </div>
-
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Company Name"
-                    required
-                  />
-                  <i class="fas fa-building form-icon"></i>
-                </div>
-
-                <div class="form-group">
-                  <select class="form-control" required>
-                    <option value="">Business Size</option>
-                    <option value="startup">Startup (1-10 employees)</option>
-                    <option value="small">
-                      Small Business (11-50 employees)
-                    </option>
-                    <option value="medium">
-                      Medium Business (51-200 employees)
-                    </option>
-                    <option value="enterprise">
-                      Enterprise (200+ employees)
-                    </option>
-                  </select>
-                  <i class="fas fa-users form-icon"></i>
-                </div>
-
-                <button type="submit" class="btn-cta">
-                  <span class="btn-text">Book Free Consultation</span>
-                  <i class="fas fa-arrow-right btn-icon"></i>
-                  <div class="btn-bg"></div>
-                </button>
-
-                <p class="form-disclaimer">
-                  <i class="fas fa-lock"></i>
-                  Your information is secure and will never be shared
-                </p>
-              </form>
-            </div>
-          </div>
         </div>
-      </div>
 
-      <div class="foot mt-80">
-        <div class="row align-items-center">
-          <div class="col-lg-2">
-            <div class="logo">
-              <img src="assets/img/logos/evoglad_logo.png" alt="" />
+        <div class="foot mt-80">
+            <div class="row align-items-center">
+                <div class="col-lg-2">
+                    <div class="logo">
+                        <img src="assets/img/logos/evoglad_logo.png" alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <ul class="links">
+                        <li>
+                            <a href="home-app-landing.html" class="active">Home</a>
+                        </li>
+                        <li>
+                            <a href="page-about-5.html">about</a>
+                        </li>
+                        <li>
+                            <a href="page-product-5.html">product</a>
+                        </li>
+                        <li>
+                            <a href="page-portfolio-5.html">portfolio</a>
+                        </li>
+                        <li>
+                            <a href="page-services-5.html">services</a>
+                        </li>
+                        <li>
+                            <a href="terms-of-service.html">Terms of Service</a>
+                        </li>
+                        <li>
+                            <a href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="refund.html">Refund</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-8">
-            <ul class="links">
-              <li>
-                <a href="home-app-landing.html" class="active">Home</a>
-              </li>
-              <li>
-                <a href="page-about-5.html">about</a>
-              </li>
-              <li>
-                <a href="page-product-5.html">product</a>
-              </li>
-              <li>
-                <a href="page-portfolio-5.html">portfolio</a>
-              </li>
-              <li>
-                <a href="page-services-5.html">services</a>
-              </li>
-              <li>
-                <a href="terms-of-service.html">Terms of Service</a>
-              </li>
-              <li>
-                <a href="privacy-policy.html">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="refund.html">Refund</a>
-              </li>
-            </ul>
-          </div>
         </div>
-      </div>
-      <div class="copywrite text-center">
-        <small class="small">
-          © 2025 Copyrights by
-          <a href="#" class="fw-bold text-decoration-underline">Evoglad</a>
-          All Rights Reserved.
-        </small>
-      </div>
+        <div class="copywrite text-center">
+            <small class="small">
+                © 2025 Copyrights by
+                <a href="#" class="fw-bold text-decoration-underline">Evoglad</a>
+                All Rights Reserved.
+            </small>
+        </div>
 
-      <img src="assets/img/footer/footer_wave.png" alt="" class="wave" />
+        <img src="assets/img/footer/footer_wave.png" alt="" class="wave" />
     </footer>
     <!-- ====== end footer ====== -->
 
     <!-- ====== start to top button ====== -->
-    <a
-      href="#"
-      class="to_top bg-gray rounded-circle icon-40 d-inline-flex align-items-center justify-content-center"
-    >
-      <i class="bi bi-chevron-up fs-6 text-dark"></i>
+    <a href="#" class="to_top bg-gray rounded-circle icon-40 d-inline-flex align-items-center justify-content-center">
+        <i class="bi bi-chevron-up fs-6 text-dark"></i>
     </a>
     <!-- ====== end to top button ====== -->
 
@@ -569,8 +758,6 @@
     <!-- <script src="assets/js/lib/pace.js"></script> -->
     <script src="assets/js/lib/scrollIt.min.js"></script>
     <script src="assets/js/main.js"></script>
-  </body>
+</body>
+
 </html>
-
-
-

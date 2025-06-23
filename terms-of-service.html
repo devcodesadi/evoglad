@@ -55,48 +55,123 @@
 
   <!-- ====== start navbar ====== -->
   <nav class="navbar navbar-expand-lg navbar-light style-4" id="main-nav">
-    <div class="container">
-      <a class="navbar-brand" href="#" data-scroll-nav="0">
-        <img src="assets/img/logos/evoglad_logo.png" alt="" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-uppercase">
-          <li class="nav-item dropdown">
-            <a class="nav-link active" href="index.html"> Home </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="channel.html" data-scroll-nav="1"> Channels </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#0" data-scroll-nav="2">
-              Integration
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#0" data-scroll-nav="3"> Features </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#0" data-scroll-nav="4"> Services </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#0" data-scroll-nav="5"> About </a>
-          </li>
-        </ul>
-        <div class="nav-side">
-          <div class="d-flex align-items-center">
-            <a href="#0" class="btn rounded-pill brd-gray hover-blue4 sm-butn fw-bold" data-scroll-nav="8">
-              <span><i class="fas fa-calendar-check me-2 pe-2 border-end"></i>
-                Book Free Consultation</span>
-            </a>
+      <div class="container">
+        <a class="navbar-brand" href="#" data-scroll-nav="0">
+          <img src="assets/img/logos/evoglad_logo.png" alt="Evoglad Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-uppercase">
+            <!-- Home -->
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+
+            <!-- channel Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"> Channel </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#whatsapp"
+                    >WhatsApp</a
+                  >
+                </li>
+                
+                <li>
+                  <a class="dropdown-item" href="channel.html#facebook">Facebook</a>
+                </li>
+                <li><a class="dropdown-item" href="channel.html#instagram">Instagram</a></li>
+                <li><a class="dropdown-item" href="channel.html#telegram">Telegram</a></li>
+                <li><a class="dropdown-item" href="channel.html#website">Website</a></li>
+              </ul>
+            </li>
+
+            <!-- Integration -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#integration">Integration</a>
+            </li>
+
+            <!-- Features Dropdown -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#features"> Features </a>
+            </li>
+
+            <!-- Services Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="index.html#what-we-offer"
+                    >What We Offer</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html#how-we-help">How We Help</a>
+                </li>
+                <li><a class="dropdown-item" href="index.html#faq">F.A.Q</a></li>
+              </ul>
+            </li>
+
+            <!-- About Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                About
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html#about-us">About Us</a></li>
+                <li>
+                  <a class="dropdown-item" href="index.html#why-choose-us"
+                    >Why Choose Us</a
+                  >
+                </li>
+                
+                <li>
+                  <a class="dropdown-item" href="index.html#how-it-works">How It Works</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- CTA Button -->
+          <div class="nav-side">
+            <div class="d-flex align-items-center">
+              <a
+                href="#book-consultation"
+                class="btn rounded-pill brd-gray hover-blue4 sm-butn fw-bold"
+              >
+                <span
+                  ><i class="fas fa-calendar-check me-2 pe-2 border-end"></i>
+                  Book Free Consultation</span
+                >
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
   <!-- ====== end navbar ====== -->
 
   <!-- ====== start header ====== -->
@@ -400,127 +475,144 @@
   <!--End-Contents-->
 
   <!-- ====== start footer ====== -->
-  <footer class="style-4" data-scroll-index="8">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="section-head style-4">
-            <h2 class="mb-10">
-              Ready to Supercharge Your Business with <br />
-              <span> WhatsApp Automation? </span>
-            </h2>
-            <p>
-              Transform your customer experience with intelligent, real-time
-              <br />
-              communication — faster, smarter, and more personal.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="cta-form-container">
-            <div class="cta-form-header"></div>
-            <h3 class="section-header">
-              Get started in
-
-              <span> 2 minutes. </span>
-            </h3>
-
-            <form class="cta-form" id="consultationForm">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Full Name" required />
-                <i class="fas fa-user form-icon"></i>
-              </div>
-
-              <div class="form-group">
-                <input type="tel" class="form-control" placeholder="Phone Number" required />
-                <i class="fas fa-phone form-icon"></i>
-              </div>
-
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Company Name" required />
-                <i class="fas fa-building form-icon"></i>
-              </div>
-
-              <div class="form-group">
-                <select class="form-control" required>
-                  <option value="">Business Size</option>
-                  <option value="startup">Startup (1-10 employees)</option>
-                  <option value="small">
-                    Small Business (11-50 employees)
-                  </option>
-                  <option value="medium">
-                    Medium Business (51-200 employees)
-                  </option>
-                  <option value="enterprise">
-                    Enterprise (200+ employees)
-                  </option>
-                </select>
-                <i class="fas fa-users form-icon"></i>
-              </div>
-
-              <button type="submit" class="btn-cta">
-                <span class="btn-text">Book Free Consultation</span>
-                <i class="fas fa-arrow-right btn-icon"></i>
-                <div class="btn-bg"></div>
-              </button>
-
-              <p class="form-disclaimer">
-                <i class="fas fa-lock"></i>
-                Your information is secure and will never be shared
+<footer class="style-4" data-scroll-index="8">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="section-head style-4">
+              <h2 class="mb-10">
+                Ready to Supercharge Your Business with <br />
+                <span> WhatsApp Automation? </span>
+              </h2>
+              <p>
+                Transform your customer experience with intelligent, real-time
+                <br />
+                communication — faster, smarter, and more personal.
               </p>
-            </form>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="cta-form-container">
+              <div class="cta-form-header"></div>
+              <h3 class="section-header">
+                Get started in
+
+                <span> 2 minutes. </span>
+              </h3>
+
+              <form class="cta-form" id="consultationForm">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Full Name"
+                    required
+                  />
+                  <i class="fas fa-user form-icon"></i>
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="Phone Number"
+                    required
+                  />
+                  <i class="fas fa-phone form-icon"></i>
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Company Name"
+                    required
+                  />
+                  <i class="fas fa-building form-icon"></i>
+                </div>
+
+                <div class="form-group">
+                  <select class="form-control" required>
+                    <option value="">Business Size</option>
+                    <option value="startup">Startup (1-10 employees)</option>
+                    <option value="small">
+                      Small Business (11-50 employees)
+                    </option>
+                    <option value="medium">
+                      Medium Business (51-200 employees)
+                    </option>
+                    <option value="enterprise">
+                      Enterprise (200+ employees)
+                    </option>
+                  </select>
+                  <i class="fas fa-users form-icon"></i>
+                </div>
+
+                <button type="submit" class="btn-cta">
+                  <span class="btn-text">Book Free Consultation</span>
+                  <i class="fas fa-arrow-right btn-icon"></i>
+                  <div class="btn-bg"></div>
+                </button>
+
+                <p class="form-disclaimer">
+                  <i class="fas fa-lock"></i>
+                  Your information is secure and will never be shared
+                </p>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="foot mt-80">
-      <div class="row align-items-center">
-        <div class="col-lg-2">
-          <div class="logo">
-            <img src="assets/img/logos/evoglad_logo.png" alt="" />
+      <div class="foot mt-80">
+        <div class="row align-items-center">
+          <div class="col-lg-2">
+            <div class="logo">
+              <img src="assets/img/logos/evoglad_logo.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <ul class="links">
+              <li>
+                <a href="home-app-landing.html" class="active">Home</a>
+              </li>
+              
+              <li>
+                <a href="channel.html">Channel</a>
+              </li>
+              <li>
+                <a href="index.html#features">Feature</a>
+              </li>
+              <li>
+                <a href="index.html#what-we-offer">Service</a>
+              </li>
+              <li>
+                <a href="index.html#why-choose-us">About</a>
+              </li>
+              
+              <li>
+                <a href="terms-of-service.html">Terms of Service</a>
+              </li>
+              <li>
+                <a href="privacy-policy.html">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="refund.html">Refund</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-lg-8">
-          <ul class="links">
-            <li>
-              <a href="home-app-landing.html" class="active">Home</a>
-            </li>
-            <li>
-              <a href="page-about-5.html">about</a>
-            </li>
-            <li>
-              <a href="page-product-5.html">product</a>
-            </li>
-            <li>
-              <a href="page-portfolio-5.html">portfolio</a>
-            </li>
-            <li>
-              <a href="page-services-5.html">services</a>
-            </li>
-            <li>
-              <a href="terms-of-service.html">Terms of Service</a>
-            </li>
-            <li>
-              <a href="privacy-policy.html">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="refund.html">Refund</a>
-            </li>
-          </ul>
-        </div>
       </div>
-    </div>
-    <div class="copywrite text-center">
-      <small class="small">
-        © 2025 Copyrights by
-        <a href="#" class="fw-bold text-decoration-underline">Evoglad</a>
-        All Rights Reserved.
-      </small>
-    </div>
+      <div class="copywrite text-center">
+        <small class="small">
+          © 2025 Copyrights by
+          <a href="#" class="fw-bold text-decoration-underline">Evoglad</a>
+          All Rights Reserved.
+        </small>
+      </div>
 
-    <img src="assets/img/footer/footer_wave.png" alt="" class="wave" />
-  </footer>
+      <img src="assets/img/footer/footer_wave.png" alt="" class="wave" />
+    </footer>
   <!-- ====== end footer ====== -->
 
   <!-- ====== start to top button ====== -->
