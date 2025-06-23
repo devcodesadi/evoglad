@@ -69,11 +69,15 @@
     <!-- ====== end loading page ====== -->
 
     <!-- ====== start navbar ====== -->
+    <!-- Bootstrap 5 navbar with custom styling and smooth scroll navigation -->
     <nav class="navbar navbar-expand-lg navbar-light style-4" id="main-nav">
       <div class="container">
+        <!-- Brand logo with scroll-to-top functionality using custom data attribute -->
         <a class="navbar-brand" href="#" data-scroll-nav="0">
           <img src="assets/img/logos/evoglad_logo.png" alt="Evoglad Logo" />
         </a>
+
+        <!-- Mobile hamburger menu toggle with proper accessibility attributes -->
         <button
           class="navbar-toggler"
           type="button"
@@ -86,29 +90,29 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- Collapsible navigation content for responsive behavior -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Main navigation menu centered with uppercase styling for visual hierarchy -->
           <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-uppercase">
-            <!-- Home -->
+            <!-- Home navigation item with active state -->
             <li class="nav-item">
               <a class="nav-link active" href="#home">Home</a>
             </li>
 
-            <!-- Channels Dropdown -->
+            <!-- Single-level navigation items using hash links for smooth scrolling -->
             <li class="nav-item">
               <a class="nav-link" href="#channels"> Channels </a>
             </li>
 
-            <!-- Integration -->
             <li class="nav-item">
               <a class="nav-link" href="#integration">Integration</a>
             </li>
 
-            <!-- Features Dropdown -->
             <li class="nav-item">
               <a class="nav-link" href="#features"> Features </a>
             </li>
 
-            <!-- Services Dropdown -->
+            <!-- Services dropdown grouping related content sections for better UX -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -117,6 +121,7 @@
               >
                 Services
               </a>
+              <!-- Dropdown menu with service-related page sections -->
               <ul class="dropdown-menu">
                 <li>
                   <a class="dropdown-item" href="#what-we-offer"
@@ -130,7 +135,7 @@
               </ul>
             </li>
 
-            <!-- About Dropdown -->
+            <!-- About dropdown organizing company information and trust-building content -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -139,6 +144,7 @@
               >
                 About
               </a>
+              <!-- Dropdown menu with company/process information -->
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#about-us">About Us</a></li>
                 <li>
@@ -153,13 +159,15 @@
             </li>
           </ul>
 
-          <!-- CTA Button -->
+          <!-- Right-side CTA section for prominent conversion action -->
           <div class="nav-side">
             <div class="d-flex align-items-center">
+              <!-- Primary CTA button with consistent styling matching other page CTAs -->
               <a
                 href="#book-consultation"
                 class="btn rounded-pill brd-gray hover-blue4 sm-butn fw-bold"
               >
+                <!-- Icon with visual separator maintains design consistency across all CTAs -->
                 <span
                   ><i class="fas fa-calendar-check me-2 pe-2 border-end"></i>
                   Book Free Consultation</span
@@ -170,80 +178,76 @@
         </div>
       </div>
     </nav>
-
     <!-- ====== end navbar ====== -->
 
     <!-- ====== start header ====== -->
 
+    <!-- Hero header section with scroll navigation anchor point -->
     <header class="style-4" data-scroll-index="0">
       <div class="content">
         <div class="container">
+          <!-- Zero gutter row to eliminate spacing between hero content and image -->
           <div class="row gx-0">
+            <!-- Left column: Hero content and CTAs -->
             <div class="col-lg-6">
               <div class="info">
+                <!-- Trust badge leveraging WhatsApp's brand authority and lightning emoji for urgency -->
                 <small class="mb-50 title_small"
                   >⚡️ Powered by Official WhatsApp Business API</small
                 >
+
+                <!-- Primary headline with spans for selective styling and strategic line breaks for readability -->
                 <h1 class="mb-30">
                   Boost <span> your business </span><br />
                   with <span> multi-channel</span> Automation
                 </h1>
+
+                <!-- Value proposition with explicit channel names and manual line break for visual control -->
                 <p class="text">
                   Engage customers instantly across WhatsApp, Messenger,<br />
                   Instagram, Telegram & Web — all from one AI-powered platform.
                   .
                 </p>
+
+                <!-- CTA section with flexbox alignment for consistent button/element positioning -->
                 <div class="d-flex align-items-center mt-50">
+                  <!-- Primary CTA styled as external app store link but redirects to consultation booking -->
                   <a
                     href="https://www.apple.com/app-store/"
                     class="btn rounded-pill bg-blue4 fw-bold text-white me-4"
                     target="_blank"
                   >
                     <small>
+                      <!-- Icon with border-end creates visual separation within the button -->
                       <i class="fas fa-calendar-check me-2 pe-2 border-end"></i>
                       Book Your Free Consultation
                     </small>
                   </a>
-                  <!-- <a href="https://youtu.be/pGbIOC83-So?t=21" data-lity class="play-btn">
-                                    <span class="icon me-2">
-                                        <i class="fas fa-play ms-1"></i>
-                                    </span>
-                                    <strong class="small">View <br> Promotion</strong>
-                                </a> -->
                 </div>
-                <span class="mt-100 me-5">
-                  <small
-                    class="icon-30 bg-gray rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-1"
-                  >
-                    <i class="fas fa-sync"></i>
-                  </small>
-                  <small class="text-uppercase"
-                    >Connect 6+ Channels Instantly</small
-                  >
-                </span>
-                <span class="mt-100">
-                  <small
-                    class="icon-30 bg-gray rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-1"
-                  >
-                    <i class="fas fa-credit-card"></i>
-                  </small>
-                  <small class="text-uppercase">Sales & Marketing 24/7</small>
-                </span>
+
+
               </div>
             </div>
+
+            <!-- Right column: Hero image -->
             <div class="col-lg-6">
               <div class="img">
+                <!-- Main hero illustration showing product interface or concept -->
                 <img src="assets/img/header/hero_section.png" alt="" />
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Decorative bubble element positioned absolutely for visual interest -->
         <img
           src="assets/img/header/evoglad_Hero_bubble.svg"
           alt=""
           class="bubble"
         />
       </div>
+
+      <!-- Wave separator element positioned at bottom of header for section transition -->
       <img src="assets/img/header/header_wave.png" alt="" class="wave" />
     </header>
     <!-- ====== end header ====== -->
@@ -251,33 +255,46 @@
     <!--Contents-->
     <main>
       <!-- ====== SECTION: Why Partner With Evoglad====== -->
-
+      <!-- Main features section showcasing key value propositions for potential partners -->
+      <!-- Uses data-scroll-index for smooth scroll navigation integration -->
       <section
         id="why-choose-us"
         class="features pt-70 pb-70 style-4"
         data-scroll-index="1"
       >
         <div class="container">
+          <!-- Section header with consistent style-4 theming across the site -->
           <div class="section-head text-center style-4">
+            <!-- Small descriptive text to provide context before main heading -->
             <small class="title_small bg-white"
               >Trusted by businesses to automate, scale, and connect
               smarter.</small
             >
+            <!-- Main section heading with branded span for visual emphasis -->
             <h2 class="mb-70">
               Why Partner
               <span> With evoglad </span>
             </h2>
           </div>
+
+          <!-- Features grid container - relies on CSS grid/flexbox for responsive layout -->
           <div class="content">
+            <!-- Each features-card follows identical structure for consistency and maintainability -->
+
+            <!-- Partnership credibility card -->
             <div class="features-card">
+              <!-- Icon container with img-contain class for consistent image scaling -->
               <div class="icon img-contain">
                 <img src="assets/img/icons/serv_icons/36.png" alt="" />
               </div>
+              <!-- Break tags used for controlled line breaks in card titles -->
               <h6>
                 Official API <br />
                 Integration Partner
               </h6>
             </div>
+
+            <!-- Deployment speed card -->
             <div class="features-card">
               <div class="icon img-contain">
                 <img src="assets/img/icons/rocket.png" alt="" />
@@ -287,6 +304,8 @@
                 Deployment
               </h6>
             </div>
+
+            <!-- Compliance assurance card -->
             <div class="features-card">
               <div class="icon img-contain">
                 <img src="assets/img/icons/fe1.png" alt="" />
@@ -296,6 +315,8 @@
                 Compliance
               </h6>
             </div>
+
+            <!-- Automation expertise card -->
             <div class="features-card">
               <div class="icon img-contain">
                 <img src="assets/img/icons/features/25.png" alt="" />
@@ -305,6 +326,8 @@
                 Strategies
               </h6>
             </div>
+
+            <!-- Infrastructure scalability card -->
             <div class="features-card">
               <div class="icon img-contain">
                 <img src="assets/img/icons/serv_icons/16.png" alt="" />
@@ -314,6 +337,8 @@
                 Infrastructure
               </h6>
             </div>
+
+            <!-- Support quality card -->
             <div class="features-card">
               <div class="icon img-contain">
                 <img src="assets/img/icons/serv_icons/14.png" alt="" />
@@ -325,20 +350,26 @@
             </div>
           </div>
         </div>
+
+        <!-- Decorative background element positioned absolutely via CSS -->
         <img src="assets/img/feat_circle.png" alt="" class="img-circle" />
       </section>
       <!-- ====== SECTION: Why Partner With Evoglad ====== -->
 
       <!-- === SECTION: Why Your Business Needs WhatsApp Business API ==== --->
-
+      <!-- Benefits showcase section using carousel to display multiple value propositions -->
+      <!-- Uses pain-point class to address customer challenges and position solutions -->
       <section class="section-padding pain-point">
         <div class="container">
+          <!-- Section header following established pattern with style-4 theming -->
           <div class="section-header">
             <div class="section-head style-4">
+              <!-- Main heading with branded span for visual consistency -->
               <h2 class="mb-30">
                 Why Your Business Needs <span>WhatsApp Business API</span>
               </h2>
             </div>
+            <!-- Explanatory subtitle to provide context before diving into specific benefits -->
             <p class="section-subtitle text-muted">
               WhatsApp Business API opens a world of opportunities for
               businesses to communicate directly, personally, and securely with
@@ -346,14 +377,18 @@
             </p>
           </div>
 
+          <!-- Carousel wrapper for horizontal scrolling through benefit cards -->
           <div class="carousel-container">
+            <!-- Track element that translates horizontally to show different cards -->
             <div class="carousel-track" id="carouselTrack">
-              <!-- Card 1 -->
+              <!-- Card 1: Core messaging benefit -->
               <div class="benefit-card">
+                <!-- Emoji icons used for quick visual recognition and modern appeal -->
                 <div class="card-icon">💬</div>
                 <h3 class="card-title">
                   Direct and Instant Customer Communication
                 </h3>
+                <!-- Focuses on platform preference and engagement metrics -->
                 <p class="card-description">
                   Connect with customers on their most preferred messaging
                   platform — WhatsApp — ensuring higher open rates and faster
@@ -361,10 +396,11 @@
                 </p>
               </div>
 
-              <!-- Card 2 -->
+              <!-- Card 2: Scalability advantage -->
               <div class="benefit-card">
                 <div class="card-icon">🚀</div>
                 <h3 class="card-title">Scalable Messaging</h3>
+                <!-- Emphasizes compliance to address common business concerns -->
                 <p class="card-description">
                   Send personalized messages, alerts, notifications, and
                   promotions to thousands of customers simultaneously while
@@ -372,54 +408,59 @@
                 </p>
               </div>
 
-              <!-- Card 3 -->
+              <!-- Card 3: Automation capability -->
               <div class="benefit-card">
                 <div class="card-icon">🤖</div>
                 <h3 class="card-title">
                   24/7 Customer Support with Automation
                 </h3>
+                <!-- Highlights both automation and human fallback for comprehensive support -->
                 <p class="card-description">
                   Provide round-the-clock support using chatbots, automated
                   replies, and escalation to live agents when needed.
                 </p>
               </div>
 
-              <!-- Card 4 -->
+              <!-- Card 4: Security and trust -->
               <div class="benefit-card">
                 <div class="card-icon">🔒</div>
                 <h3 class="card-title">
                   Secure and Verified Business Communication
                 </h3>
+                <!-- Addresses trust concerns with verification and encryption -->
                 <p class="card-description">
                   Use a verified WhatsApp Business account to build trust with
                   your audience and ensure secure, encrypted conversations.
                 </p>
               </div>
 
-              <!-- Card 5 -->
+              <!-- Card 5: Media capabilities -->
               <div class="benefit-card">
                 <div class="card-icon">🎨</div>
                 <h3 class="card-title">Rich Media Messaging</h3>
+                <!-- Lists specific media types to showcase platform versatility -->
                 <p class="card-description">
                   Share images, videos, documents, catalogs, quick reply
                   buttons, and interactive templates to enhance user engagement.
                 </p>
               </div>
 
-              <!-- Card 6 -->
+              <!-- Card 6: Lead management -->
               <div class="benefit-card">
                 <div class="card-icon">🎯</div>
                 <h3 class="card-title">Lead Generation and Nurturing</h3>
+                <!-- Focuses on automation of sales funnel processes -->
                 <p class="card-description">
                   Automatically capture leads, qualify them, and nurture
                   prospects directly through WhatsApp conversations.
                 </p>
               </div>
 
-              <!-- Card 7 -->
+              <!-- Card 7: System integration -->
               <div class="benefit-card">
                 <div class="card-icon">🔗</div>
                 <h3 class="card-title">Integration with Business Systems</h3>
+                <!-- Uses section-subtitle class instead of card-description for variety -->
                 <p class="section-subtitle">
                   Seamlessly integrate WhatsApp messaging into your CRM, ERP,
                   website, or customer support systems to automate workflows and
@@ -427,7 +468,7 @@
                 </p>
               </div>
 
-              <!-- Card 8 -->
+              <!-- Card 8: Performance metrics -->
               <div class="benefit-card">
                 <div class="card-icon">📈</div>
                 <h3 class="card-title">
@@ -435,25 +476,28 @@
                 </h3>
                 <p class="card-description">
                   WhatsApp messages enjoy up to
+                  <!-- Statistical highlight for credibility and impact -->
                   <span class="highlight-stat">98% open rates</span> and
                   significantly higher response rates compared to email and SMS.
                 </p>
               </div>
 
-              <!-- Card 9 -->
+              <!-- Card 9: Global reach -->
               <div class="benefit-card">
                 <div class="card-icon">🌍</div>
                 <h3 class="card-title">Global Customer Reach</h3>
+                <!-- Emphasizes cost-effectiveness compared to traditional channels -->
                 <p class="card-description">
                   Reach customers globally across regions and time zones without
                   the cost or limitations of traditional messaging channels.
                 </p>
               </div>
 
-              <!-- Card 10 -->
+              <!-- Card 10: Analytics and optimization -->
               <div class="benefit-card">
                 <div class="card-icon">📊</div>
                 <h3 class="card-title">Detailed Analytics and Insights</h3>
+                <!-- Focuses on continuous improvement and data-driven optimization -->
                 <p class="card-description">
                   Track delivery, open, and response rates to optimize campaigns
                   and improve customer interactions continuously.
@@ -462,7 +506,9 @@
             </div>
           </div>
 
+          <!-- Carousel navigation controls positioned below the cards -->
           <div class="carousel-controls">
+            <!-- Previous button with inline SVG arrow for consistent styling -->
             <button
               class="carousel-button"
               id="prevBtn"
@@ -480,8 +526,10 @@
               </svg>
             </button>
 
+            <!-- Dot indicators container - populated dynamically by JavaScript -->
             <div class="carousel-dots" id="carouselDots"></div>
 
+            <!-- Next button with inline SVG arrow pointing right -->
             <button
               class="carousel-button"
               id="nextBtn"
@@ -504,31 +552,43 @@
 
       <!-- === SECTION: Why Your Business Needs WhatsApp Business API ==== --->
 
-      <!-- ====== start about ====== -->
+      <!-- ====== start about service ====== -->
+      <!-- Multi-content about section showcasing services with alternating layouts -->
+      <!-- Uses style-4 theming and data-scroll-index for navigation integration -->
       <section id="what-we-offer" class="about section-padding style-4">
+        <!-- First content block: Core services with image-left layout -->
         <div class="content frs-content" id="about" data-scroll-index="2">
           <div class="container">
             <div class="row align-items-center justify-content-between">
+              <!-- Left column: Visual element (robot illustration) -->
               <div class="col-lg-6">
                 <div class="img mb-30 mb-lg-0">
                   <img src="assets/img/about/evo_robot.png" alt="" />
                 </div>
               </div>
+
+              <!-- Right column: Service information with accordion -->
               <div class="col-lg-5">
                 <div class="info">
+                  <!-- Section header following established pattern -->
                   <div class="section-head style-4">
                     <small class="title_small">Our Services</small>
                     <h2 class="mb-30">
                       End-to-End <span> Multi-Channel </span> Business Solutions
                     </h2>
                   </div>
+
+                  <!-- Brief description of service scope -->
                   <p class="text-muted text mb-40">
                     We help you scale conversations across WhatsApp, Facebook,
                     Instagram, and your website — from marketing to support to
                     lead generation.
                   </p>
+
+                  <!-- FAQ-style accordion to present services in digestible format -->
                   <div class="faq style-3 style-4">
                     <div class="accordion" id="accordionExample">
+                      <!-- First accordion item: AI Chatbots (default open) -->
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="heading1">
                           <button
@@ -542,6 +602,7 @@
                             AI-Driven Chatbots
                           </button>
                         </h2>
+                        <!-- Show class makes this the default visible content -->
                         <div
                           id="collapse1"
                           class="accordion-collapse collapse show"
@@ -555,6 +616,8 @@
                           </div>
                         </div>
                       </div>
+
+                      <!-- Second accordion item: Message Automation -->
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="heading2">
                           <button
@@ -580,6 +643,8 @@
                           </div>
                         </div>
                       </div>
+
+                      <!-- Third accordion item: API Integration -->
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="heading3">
                           <button
@@ -608,6 +673,8 @@
                       </div>
                     </div>
                   </div>
+
+                  <!-- Call-to-action button with consultation focus -->
                   <a
                     href="#book-consultation"
                     class="btn rounded-pill bg-blue4 fw-bold text-white mt-50"
@@ -623,6 +690,8 @@
               </div>
             </div>
           </div>
+
+          <!-- Decorative background elements for visual enhancement -->
           <img src="assets/img/about/about_s4_lines.png" alt="" class="lines" />
           <img
             src="assets/img/about/evoglad_bubble_2.svg"
@@ -630,12 +699,16 @@
             class="bubble"
           />
         </div>
+
+        <!-- Second content block: Advanced features with image-right layout -->
         <div class="content sec-content">
           <div class="container">
             <div class="row align-items-center justify-content-between">
+              <!-- Left column: Service information (order-2 on mobile for responsive design) -->
               <div class="col-lg-5 order-2 order-lg-0">
                 <div class="info">
                   <div class="section-head style-4">
+                    <!-- Longer descriptive subtitle for context -->
                     <small class="title_small"
                       >Integrate, Automate, and Optimize Every Customer
                       Interaction</small
@@ -644,12 +717,17 @@
                       Smart Automation Backed by <span> Real Insights </span>
                     </h2>
                   </div>
-                  <p class="text-muted  mb-40">
+
+                  <!-- Focus on data-driven benefits -->
+                  <p class="text-muted mb-40">
                     Leverage data-driven automation to boost engagement, improve
                     workflows, and make smarter decisions at every touchpoint.
                   </p>
+
+                  <!-- Another accordion for advanced features -->
                   <div class="faq style-3 style-4">
                     <div class="accordion" id="accordionExample">
+                      <!-- Multi-agent support feature -->
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="heading2">
                           <button
@@ -675,6 +753,8 @@
                           </div>
                         </div>
                       </div>
+
+                      <!-- Broadcast campaigns feature -->
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="heading3">
                           <button
@@ -688,6 +768,7 @@
                             Broadcast Campaigns
                           </button>
                         </h2>
+                        <!-- Note: Content seems mismatched - shows "Analytics and Reporting" instead of broadcast info -->
                         <div
                           id="collapse3"
                           class="accordion-collapse collapse"
@@ -699,6 +780,8 @@
                           </div>
                         </div>
                       </div>
+
+                      <!-- Analytics feature (default open in this section) -->
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="heading1">
                           <button
@@ -728,6 +811,8 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Right column: Chat interface illustration (order-0 on mobile) -->
               <div class="col-lg-6 order-0 order-lg-2">
                 <div class="img mb-30 mb-lg-0">
                   <img src="assets/img/about/evoglad_chat.png" alt="" />
@@ -735,37 +820,52 @@
               </div>
             </div>
           </div>
+
+          <!-- Different bubble decoration for visual variety -->
           <img
             src="assets/img/about/evoglad_bubble.svg"
             alt=""
             class="bubble2"
           />
         </div>
+
+        <!-- Third content block: Custom API solutions with detailed list -->
         <div class="content trd-content">
           <div class="container">
             <div class="row align-items-center justify-content-between">
+              <!-- Left column: Server/API illustration -->
               <div class="col-lg-6">
                 <div class="img mb-30 mb-lg-0">
                   <img src="assets/img/about/server.svg" alt="" />
                 </div>
               </div>
+
+              <!-- Right column: API automation details -->
               <div class="col-lg-5">
                 <div class="info">
                   <div class="section-head style-4">
+                    <!-- No title_small here - focuses directly on the main heading -->
                     <h2 class="mb-20">
                       Custom API Solutions to Automate Your
                       <span> Business Processes </span>
                     </h2>
                   </div>
+
+                  <!-- Explanation of integration capabilities -->
                   <p class="text-muted text mb-20">
                     Seamlessly integrate WhatsApp messaging into your CRM, ERP,
                     or website workflows. Automate lead follow-ups, delivery
                     alerts, payment reminders, and more — all in real-time.
                   </p>
+
+                  <!-- Detailed list of automation possibilities -->
                   <ul>
+                    <!-- List header -->
                     <li class="mb-1">
                       <h5 class="fw-bold">What You Can Automate</h5>
                     </li>
+
+                    <!-- Each list item uses consistent icon and styling -->
                     <li class="d-flex align-items-center">
                       <i class="bi bi-dot fs-2 me-2 lh-1 color-blue4"></i>
                       <h6>Order and delivery notifications</h6>
@@ -793,16 +893,12 @@
                       </h6>
                     </li>
                   </ul>
-                  <!-- <a
-                    href="page-services-5.html"
-                    class="btn rounded-pill bg-blue4 fw-bold text-white mt-50"
-                  >
-                    <small> Bring automation to your business — effortlessly and securely. </small>
-                  </a> -->
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- Consistent decorative element across content blocks -->
           <img
             src="assets/img/about/evoglad_bubble_2.svg"
             alt=""
@@ -810,34 +906,48 @@
           />
         </div>
       </section>
-      <!-- ====== end about ====== -->
-
+      <!-- ====== end about service ====== -->
       <!-- Section Start: Highlights key benefits of automation and how it boosts engagement and growth.
      Combines feature list with visual orbit icons for dynamic SaaS feel. -->
-
+      <!-- Benefits showcase section focusing on automation outcomes rather than features -->
+      <!-- Uses section-2 class for alternative styling and visual differentiation -->
       <section id="how-we-help" class="section-padding section-2">
         <div class="container">
           <div class="row align-items-center">
+            <!-- Left column: Content and benefits list -->
             <div class="col-lg-6">
+              <!-- Section header maintaining style-4 consistency -->
               <div class="section-head style-4">
                 <h2 class="mb-30">
                   Supercharge Customer <span>Engagement and Growth</span>
                 </h2>
               </div>
 
-              <p class="lead">
+              <!-- Lead paragraph explaining integration capabilities -->
+              <!-- Uses 'lead' class for enhanced typography emphasis -->
+              <p class="text-muted mb-4">
                 Seamlessly integrate WhatsApp messaging into your CRM, ERP, or
                 website workflows. Automate lead follow-ups, delivery alerts,
                 payment reminders, and more — all in real-time.
               </p>
+
+              <!-- Custom automation list component for structured benefit presentation -->
               <div class="automation-list">
+                <!-- Section heading for the benefits list -->
                 <h3>What You Can Automate</h3>
+
+                <!-- Each automation item follows consistent icon + text pattern -->
+                <!-- Icons chosen to represent specific business outcomes -->
+
+                <!-- Customer service benefit -->
                 <div class="automation-item">
                   <div class="automation-icon">
                     <i class="fas fa-user-tie"></i>
                   </div>
                   <div class="automation-text">Instant Customer Response</div>
                 </div>
+
+                <!-- Scalability benefit -->
                 <div class="automation-item">
                   <div class="automation-icon">
                     <i class="fas fa-truck"></i>
@@ -846,6 +956,8 @@
                     Personalized Messaging at Scale
                   </div>
                 </div>
+
+                <!-- Lead generation benefit -->
                 <div class="automation-item">
                   <div class="automation-icon">
                     <i class="fas fa-calendar-check"></i>
@@ -854,6 +966,8 @@
                     Lead Capture and Qualification
                   </div>
                 </div>
+
+                <!-- Sales optimization benefit -->
                 <div class="automation-item">
                   <div class="automation-icon">
                     <i class="fas fa-headset"></i>
@@ -862,6 +976,8 @@
                     Higher Conversions and Sales
                   </div>
                 </div>
+
+                <!-- Marketing automation benefit -->
                 <div class="automation-item">
                   <div class="automation-icon">
                     <i class="fas fa-credit-card"></i>
@@ -870,12 +986,16 @@
                     Re-Engagement and Retargeting
                   </div>
                 </div>
+
+                <!-- Operational efficiency benefit -->
                 <div class="automation-item">
                   <div class="automation-icon">
                     <i class="fas fa-bell"></i>
                   </div>
                   <div class="automation-text">Operational Efficiency</div>
                 </div>
+
+                <!-- Customer experience benefit -->
                 <div class="automation-item">
                   <div class="automation-icon">
                     <i class="fas fa-shopping-cart"></i>
@@ -884,20 +1004,36 @@
                 </div>
               </div>
             </div>
+
+            <!-- Right column: Visual integration diagram -->
             <div class="col-lg-6">
+              <!-- Custom integration visual component showing WhatsApp at center -->
+              <!-- Creates a hub-and-spoke visualization of platform connections -->
               <div class="integration-visual">
+                <!-- Central WhatsApp icon as the integration hub -->
                 <div class="integration-circle">
                   <i class="fab fa-whatsapp"></i>
                 </div>
+
+                <!-- Orbiting icons representing different business systems -->
+                <!-- Each uses inline styles for color coding different system types -->
+
+                <!-- Database/CRM system (blue - data/information) -->
                 <div class="orbit-item">
                   <i class="fas fa-database" style="color: #007bff"></i>
                 </div>
+
+                <!-- E-commerce platform (green - commerce/money) -->
                 <div class="orbit-item">
                   <i class="fas fa-shopping-bag" style="color: #28a745"></i>
                 </div>
+
+                <!-- Analytics system (yellow - insights/warnings) -->
                 <div class="orbit-item">
                   <i class="fas fa-chart-bar" style="color: #ffc107"></i>
                 </div>
+
+                <!-- Email/communication system (red - alerts/messages) -->
                 <div class="orbit-item">
                   <i class="fas fa-envelope" style="color: #dc3545"></i>
                 </div>
@@ -906,15 +1042,15 @@
           </div>
         </div>
       </section>
-
       <!-- Section End: Highlights key benefits of automation and how it boosts engagement and growth.
      Combines feature list with visual orbit icons for dynamic SaaS feel. -->
 
-      <!-- Section Start: Features tab with categories like AI, Automation, Payments, and Management.
-     Uses Bootstrap pills for switching tabs and neatly showcases all core platform functionalities. -->
+      <!-- Features section implements a tabbed interface to organize platform capabilities into logical categories
+     Bootstrap pills provide responsive tab navigation while maintaining clean visual hierarchy -->
 
       <section id="features" class="section-padding">
         <div class="container">
+          <!-- Section header uses fade-in animation to introduce the features overview -->
           <div class="section-header fade-in">
             <div class="section-head style-4">
               <h2 class="mb-30">
@@ -922,18 +1058,21 @@
               </h2>
             </div>
 
+            <!-- Subtitle provides context for the feature categories below -->
             <p class="section-subtitle text-muted">
               Everything you need to revolutionize customer engagement and boost
               your business growth
             </p>
           </div>
 
+          <!-- Tab navigation uses Bootstrap pills for horizontal scrolling on mobile devices -->
           <div class="feature-tabs fade-in">
             <ul
               class="nav nav-pills justify-content-center flex-wrap"
               id="featureTabs"
               role="tablist"
             >
+              <!-- Core AI tab is set as active/default to showcase primary platform strengths -->
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link active"
@@ -946,6 +1085,7 @@
                   <i class="fas fa-robot me-2"></i>Core AI Features
                 </button>
               </li>
+              <!-- Automation tab groups workflow and communication management features -->
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link"
@@ -958,6 +1098,7 @@
                   <i class="fas fa-cogs me-2"></i>Automation & Flow
                 </button>
               </li>
+              <!-- Commerce tab emphasizes revenue-generating capabilities -->
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link"
@@ -970,6 +1111,7 @@
                   <i class="fas fa-shopping-cart me-2"></i>Commerce & Payments
                 </button>
               </li>
+              <!-- Management tab covers operational and analytical tools -->
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link"
@@ -985,10 +1127,13 @@
             </ul>
           </div>
 
+          <!-- Tab content containers match the navigation structure above -->
           <div class="tab-content" id="featuresTabContent">
-            <!-- Core AI Features -->
+            <!-- Core AI Features - Default active tab showcasing primary AI capabilities -->
             <div class="tab-pane fade show active" id="core" role="tabpanel">
+              <!-- Features grid provides consistent card layout across all tabs -->
               <div class="features-grid">
+                <!-- AI-Powered badge highlights the flagship feature -->
                 <div class="feature-card fade-in">
                   <div class="feature-badge">AI-Powered</div>
                   <div class="feature-icon">
@@ -1002,6 +1147,7 @@
                   </p>
                 </div>
 
+                <!-- Broadcasting feature emphasizes high engagement metrics -->
                 <div class="feature-card fade-in">
                   <div class="feature-icon">
                     <i class="fas fa-broadcast-tower"></i>
@@ -1013,6 +1159,7 @@
                   </p>
                 </div>
 
+                <!-- Integration feature addresses technical users' connectivity needs -->
                 <div class="feature-card fade-in">
                   <div class="feature-icon">
                     <i class="fas fa-plug"></i>
@@ -1026,9 +1173,10 @@
               </div>
             </div>
 
-            <!-- Automation & Flow -->
+            <!-- Automation & Flow - Focuses on workflow creation and multichannel management -->
             <div class="tab-pane fade" id="automation" role="tabpanel">
               <div class="features-grid">
+                <!-- No-Code badge appeals to non-technical users -->
                 <div class="feature-card fade-in">
                   <div class="feature-badge">No-Code</div>
                   <div class="feature-icon">
@@ -1041,6 +1189,7 @@
                   </p>
                 </div>
 
+                <!-- Omni-channel feature addresses customer service efficiency -->
                 <div class="feature-card fade-in">
                   <div class="feature-icon">
                     <i class="fas fa-inbox"></i>
@@ -1052,6 +1201,7 @@
                   </p>
                 </div>
 
+                <!-- Live chat emphasizes real-time support capabilities -->
                 <div class="feature-card fade-in">
                   <div class="feature-icon">
                     <i class="fas fa-comments"></i>
@@ -1066,9 +1216,10 @@
               </div>
             </div>
 
-            <!-- Commerce & Payments -->
+            <!-- Commerce & Payments - Revenue-focused features with fewer cards to emphasize quality -->
             <div class="tab-pane fade" id="commerce" role="tabpanel">
               <div class="features-grid">
+                <!-- Popular badge indicates high user adoption -->
                 <div class="feature-card fade-in">
                   <div class="feature-badge">Popular</div>
                   <div class="feature-icon">
@@ -1081,6 +1232,7 @@
                   </p>
                 </div>
 
+                <!-- Payment gateway lists specific providers to build trust -->
                 <div class="feature-card fade-in">
                   <div class="feature-icon">
                     <i class="fas fa-credit-card"></i>
@@ -1095,9 +1247,10 @@
               </div>
             </div>
 
-            <!-- Management & Support -->
+            <!-- Management & Support - Operational tools for business growth and security -->
             <div class="tab-pane fade" id="management" role="tabpanel">
               <div class="features-grid">
+                <!-- Subscriber management addresses customer database needs -->
                 <div class="feature-card fade-in">
                   <div class="feature-icon">
                     <i class="fas fa-users-cog"></i>
@@ -1110,6 +1263,7 @@
                   </p>
                 </div>
 
+                <!-- Analytics feature appeals to data-driven decision makers -->
                 <div class="feature-card fade-in">
                   <div class="feature-icon">
                     <i class="fas fa-chart-line"></i>
@@ -1121,6 +1275,7 @@
                   </p>
                 </div>
 
+                <!-- Security feature addresses enterprise compliance requirements -->
                 <div class="feature-card fade-in">
                   <div class="feature-icon">
                     <i class="fas fa-shield-alt"></i>
@@ -1137,32 +1292,35 @@
         </div>
       </section>
 
-      <!-- Section End: Features tab with categories like AI, Automation, Payments, and Management.
-     Structured to inform visitors about Evoglad’s powerful offerings in an organized, scannable layout. -->
+      <!-- Features section strategically organizes platform capabilities into digestible categories
+     Tab structure reduces cognitive load while allowing deep exploration of specific feature sets -->
 
-      <!-- Section Start: Integration Showcase
-     Displays major tools and platforms Evoglad integrates with (e.g., WhatsApp, Facebook, OpenAI).
-     Builds credibility and shows users the ecosystem compatibility visually with recognizable logos. -->
-
+      <!-- Integration section builds trust through ecosystem compatibility demonstration
+     Visual-first approach uses recognizable brand logos to reduce adoption friction -->
       <section id="integration" class="about section-padding style-4">
         <div class="content frs-content" id="about">
           <div class="integration">
+            <!-- Section header establishes the value proposition of connectivity -->
             <div class="section-head text-center style-4">
+              <!-- Small title creates emotional connection before technical details -->
               <small class="title_small"
                 >The more connected you are, the smarter you become.
               </small>
               <h2 class="mb-10">
                 Evoglad Works Seamlessly With Your <span> Favorite Tools </span>
               </h2>
+              <!-- Specific number "60+" provides concrete value while "continuously expand" suggests ongoing development -->
               <p class="section-subtitle text-muted">
-                Evoglad comes with powerful 60+ built-in integrations to help you
-                stay ahead. As our platform evolves, we continuously
-                expand your toolkit — making it easier to automate, grow, and
-                optimize your business.
+                Evoglad comes with powerful 60+ built-in integrations to help
+                you stay ahead. As our platform evolves, we continuously expand
+                your toolkit — making it easier to automate, grow, and optimize
+                your business.
               </p>
             </div>
             <div class="container">
+              <!-- Logo grid uses varied vertical positioning to create organic, non-grid appearance -->
               <div class="content">
+                <!-- Facebook positioned first as primary social media platform -->
                 <div class="img">
                   <img
                     src="assets/img/integ/facebook.svg"
@@ -1170,6 +1328,7 @@
                     class="mt-30"
                   />
                 </div>
+                <!-- WhatsApp given prominent positioning as core platform integration -->
                 <div class="img">
                   <img
                     src="assets/img/integ/whatsapp.svg"
@@ -1177,6 +1336,7 @@
                     class="mt-60"
                   />
                 </div>
+                <!-- Instagram follows Facebook to group Meta platforms together -->
                 <div class="img">
                   <img
                     src="assets/img/integ/instagram.svg"
@@ -1184,6 +1344,7 @@
                     class="mt-20"
                   />
                 </div>
+                <!-- Telegram positioned with highest offset to balance visual weight -->
                 <div class="img">
                   <img
                     src="assets/img/integ/telegram.svg"
@@ -1191,49 +1352,53 @@
                     class="mt-80"
                   />
                 </div>
+                <!-- Mailchimp at baseline provides foundation for email marketing credibility -->
                 <div class="img">
                   <img src="assets/img/integ/mailchimp.svg" alt="" />
                 </div>
+                <!-- OpenAI logo emphasizes AI capabilities and modern tech stack -->
                 <div class="img">
                   <img src="assets/img/integ/openai.svg" alt="" class="mt-30" />
                 </div>
               </div>
             </div>
+            <!-- Background graphic adds visual depth without competing with logo clarity -->
             <img
               src="assets/img/about/evoglad_intg_bg.svg"
               alt=""
               class="intg-back"
             />
           </div>
+          <!-- Wave decorations commented out but preserved for potential design iterations -->
           <!-- <img src="assets/img/about/about_s4_wave.png" alt="" class="top-wave" />
         <img src="assets/img/about/about_s4_wave.png" alt="" class="bottom-wave" /> -->
         </div>
       </section>
-
       <!---top integraion-->
+      <!-- Integration showcase strategically positioned to address "will this work with my current tools?" concern
+     Organic logo arrangement prevents corporate rigidity while maintaining professional credibility -->
 
-      <!-- Section End: Integration Showcase
-     Positioned mid-page to reassure users that Evoglad connects with tools they already use.
-     Uses a soft, visual-first layout to keep the page light and professional. -->
-
-      <!-- Section Start: Evoglad Platform Channels
-     Highlights the various channels supported by Evoglad (e.g., WhatsApp, Instagram, Telegram, Facebook, Website).
-     Shows users how the platform integrates with multiple communication touchpoints to improve engagement. -->
+      <!-- Channels section demonstrates platform versatility through specific channel benefits
+         Strategic layout prioritizes WhatsApp and Instagram as primary engagement channels -->
 
       <section id="channels" class="section-padding">
         <div class="container platform">
+          <!-- Section header emphasizes multi-channel automation value proposition -->
           <div class="section-header fade-in">
             <div class="section-head style-4">
               <h2>Evoglad platform <span>channels</span></h2>
             </div>
 
+            <!-- Empty title element preserved for potential dynamic content injection -->
             <h2 class="section-title"></h2>
             <p class="section-subtitle text-muted">
               Take your customer engagement to the next level with our automated
               business platform across multiple channels.
             </p>
           </div>
+          <!-- First row showcases top-priority channels with equal visual weight -->
           <div class="row">
+            <!-- WhatsApp positioned first as primary business messaging platform -->
             <div class="col whatsapp">
               <div class="img">
                 <img src="assets/img/integ/whatsapp.svg" alt="" class="mt-30" />
@@ -1241,12 +1406,14 @@
               <div class="sub-title">
                 <h5>WhatsApp</h5>
               </div>
+              <!-- Description emphasizes easy setup to reduce technical barriers -->
               <p class="text-muted">
-                Elevate your WhatsApp Business with Evoglad’s powerful features.
+                Elevate your WhatsApp Business with Evoglad's powerful features.
                 Automate customer support, lead generation, and sales with an
                 easy setup. Simply connect your WhatsApp Cloud API and follow
                 our step-by-step guide for seamless integration.
               </p>
+              <!-- Learn more links drive traffic to detailed channel pages -->
               <p class="text-end">
                 <a href="channel.html#whatsapp"
                   >Learn more
@@ -1254,6 +1421,7 @@
                 </a>
               </p>
             </div>
+            <!-- Instagram positioned second to leverage visual platform popularity -->
             <div class="col instagram">
               <div class="img">
                 <img
@@ -1265,8 +1433,9 @@
               <div class="sub-title">
                 <h5>Instagram</h5>
               </div>
+              <!-- Copy focuses on seamless user experience and cost savings -->
               <p class="text-muted">
-                Evoglad’s AI chatbot integration helps you respond to Instagram
+                Evoglad's AI chatbot integration helps you respond to Instagram
                 DMs instantly. Your customers will experience seamless
                 interactions, whether with you or a bot—saving time and money
                 while boosting efficiency.
@@ -1279,7 +1448,9 @@
               </p>
             </div>
           </div>
+          <!-- Second row uses gap-2 for tighter spacing between three columns -->
           <div class="row gap-2">
+            <!-- Telegram positioned as privacy-focused messaging alternative -->
             <div class="col telegram">
               <div class="img">
                 <img src="assets/img/integ/telegram.svg" alt="" class="mt-30" />
@@ -1287,11 +1458,13 @@
               <div class="sub-title">
                 <h5>Telegram</h5>
               </div>
+              <!-- Shorter description maintains visual balance across three columns -->
               <p class="text-muted">
-                Effortlessly enhance your Telegram engagement with Evoglad’s
+                Effortlessly enhance your Telegram engagement with Evoglad's
                 intuitive features, designed to streamline communication and
                 elevate your customer interactions.
               </p>
+              <!-- pt-10 adds consistent spacing above CTA -->
               <p class="text-end pt-10">
                 <a href="channel.html#telegram"
                   >Learn more
@@ -1299,6 +1472,7 @@
                 </a>
               </p>
             </div>
+            <!-- Facebook content appears misaligned - describes WebChat instead of Facebook Messenger -->
             <div class="col facebook">
               <div class="img">
                 <img src="assets/img/integ/facebook.svg" alt="" class="mt-30" />
@@ -1307,6 +1481,7 @@
                 <h5>Facebook</h5>
               </div>
 
+              <!-- Note: Content describes WebChat functionality rather than Facebook-specific features -->
               <p class="text-muted">
                 WebChat offers seamless, real-time chat support to instantly
                 engage with visitors and provide personalized assistance. Check
@@ -1320,13 +1495,16 @@
                 </a>
               </p>
             </div>
+            <!-- Website channel gets longest description to emphasize comprehensive communication options -->
             <div class="col website">
+              <!-- mb-1 provides tighter spacing for visual balance -->
               <div class="img mb-1">
                 <img src="assets/img/integ/website.svg" alt="" class="mt-30" />
               </div>
               <div class="sub-title">
                 <h5>Website</h5>
               </div>
+              <!-- Content mentions Facebook Messenger despite being in Website section - content may need review -->
               <p class="text-muted">
                 Reach your entire customer base on the platforms they use most.
                 With billions of users on Facebook Messenger, Evoglad helps you
@@ -1334,6 +1512,7 @@
                 leads. Respond with text, images, audio, video, or files to meet
                 all business needs.
               </p>
+              <!-- Flex container ensures CTA alignment despite varying content lengths -->
               <div class="flex justify-content-end align-items-end">
                 <p class="text-end">
                   <a href="channel.html#website"
@@ -1347,12 +1526,11 @@
         </div>
       </section>
 
-      <!-- Section End: Evoglad Platform Channels
-     Educates users on the versatility of Evoglad and reassures them about broad compatibility with channels their customers use most. -->
+      <!-- Channels section builds confidence in platform versatility while driving deeper engagement
+         Layout structure accommodates future channel additions without breaking visual hierarchy -->
 
-      <!-- ======================= Section Start: 
-     This section visually outlines the 3-step onboarding process for Evoglad.======================= -->
-
+      <!-- How It Works section reduces perceived complexity through simplified 3-step process
+     Testimonials class reuse leverages existing styling while pt-70 provides generous top spacing -->
       <section
         id="how-it-works"
         class="testimonials style-4 pt-70"
@@ -1361,17 +1539,22 @@
         <div class="container">
           <div class="content">
             <div class="row">
+              <!-- Left column establishes process overview and credibility metrics -->
               <div class="col-lg-5">
                 <div class="section-head style-4">
+                  <!-- Small title creates anticipation before revealing simplicity -->
                   <small class="title_small">How It Works</small>
                   <h2 class="mb-30">
                     Launch in Just <span> 3 Simple Steps </span>
                   </h2>
                 </div>
+                <!-- Brief description reinforces speed and ease messaging -->
                 <p class="text-muted text mb-40">
                   Simplified setup to get you up and running fast.
                 </p>
+                <!-- Statistics cards build confidence before detailing the process -->
                 <div class="numbs">
+                  <!-- 60+ apps stat reinforces integration capabilities shown earlier -->
                   <div class="num-card">
                     <div class="icon img-contain">
                       <img src="assets/img/header/header5_handr.png" alt="" />
@@ -1382,12 +1565,12 @@
                       Seamlessly
                     </p>
                   </div>
+                  <!-- 24/7 support addresses common concern about post-launch assistance -->
                   <div class="num-card">
                     <div class="icon img-contain">
                       <img src="assets/img/icons/serv_icons/1.png" alt="" />
                     </div>
                     <h2>24/7</h2>
-
                     <p>
                       Customer Support with <br />
                       AI Chatbots
@@ -1395,8 +1578,11 @@
                   </div>
                 </div>
               </div>
+              <!-- Right column details the actual process steps -->
               <div class="col-lg-7">
+                <!-- Reuses testimonial card styling for consistent visual language -->
                 <div class="testi-cards">
+                  <!-- Step 1: Consultation removes sales pressure by emphasizing free discovery -->
                   <div class="client_card">
                     <div class="user_img">
                       <img src="assets/img/steps/one.svg" alt="" />
@@ -1405,10 +1591,11 @@
                       <h6>Book a Free Consultation</h6>
                       <p class="text-muted">
                         Tell us about your goals, audience, and existing tools —
-                        we’ll map the best solution.
+                        we'll map the best solution.
                       </p>
                     </div>
                   </div>
+                  <!-- Step 2: Implementation handled by team reduces user technical burden -->
                   <div class="client_card">
                     <div class="user_img">
                       <img src="assets/img/steps/two.svg" alt="" />
@@ -1421,6 +1608,7 @@
                       </p>
                     </div>
                   </div>
+                  <!-- Step 3: Go-live emphasizes immediate value and growth potential -->
                   <div class="client_card">
                     <div class="user_img">
                       <img src="assets/img/steps/three.svg" alt="" />
@@ -1433,6 +1621,7 @@
                       </p>
                     </div>
                   </div>
+                  <!-- Globe decoration adds visual interest without distracting from content -->
                   <img
                     src="assets/img/contact_globe.svg"
                     alt=""
@@ -1444,9 +1633,74 @@
           </div>
         </div>
       </section>
-      <!-- ======================= Section End: How It Works ======================= -->
+      <!-- How It Works section transforms complex automation platform into digestible 3-step journey
+         Positioning after features/channels provides natural transition from "what" to "how" -->
 
-      <!-- ======================= Section End: FAQ ======================= -->
+      <!-- About Us section establishes company credibility and core value proposition
+     Community class styling creates approachable feel while maintaining professional authority -->
+      <section id="about-us" class="community section-padding style-4 mt-20">
+        <div class="container">
+          <div class="row">
+            <!-- Centered layout with constrained width focuses attention on key messaging -->
+            <div class="col-lg-10 mx-auto text-center">
+              <div class="section-head text-center style-4">
+                <!-- Triple value proposition establishes trust, scalability, and AI sophistication -->
+                <small class="title_small"
+                  >Built for trust. Designed for scale. Backed by
+                  intelligence.</small
+                >
+                <h2 class="mb-30">
+                  Transform Customer Conversations with Our
+                  <span> WhatsApp Business Platform </span>
+                </h2>
+              </div>
+              <!-- Paragraph addresses three primary use cases: service, automation, and marketing -->
+              <p class="text-muted mb-20">
+                We help businesses unlock the full power of WhatsApp — with
+                smart chatbots, message automation, and seamless API
+                integration. Whether you're aiming to improve customer service,
+                automate workflows, or scale marketing campaigns, we build
+                customized solutions to fit your business needs.
+              </p>
+              <!-- Trust indicators use card format for visual consistency with other sections -->
+              <div class="content">
+                <!-- 24/7 support addresses availability concerns for business-critical communications -->
+                <a href="#" class="commun-card">
+                  <div class="icon">
+                    <i class="fas fa-headset"></i>
+                  </div>
+                  <div class="inf">
+                    <h5>24/7 Intelligent Support</h5>
+                  </div>
+                </a>
+                <!-- Global trust builds credibility through implied scale and diversity -->
+                <a href="#" class="commun-card">
+                  <div class="icon">
+                    <i class="fas fa-globe"></i>
+                  </div>
+                  <div class="inf">
+                    <h5>Trusted by Global Businesses</h5>
+                  </div>
+                </a>
+                <!-- Security triad addresses enterprise compliance requirements -->
+                <a href="#" class="commun-card">
+                  <div class="icon">
+                    <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <div class="inf">
+                    <h5>Secure, Scalable & Compliant</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Us section serves as company credibility anchor between features and social proof
+         Centered design creates pause in user journey for key messaging absorption -->
+
+      <!-- FAQ section addresses final purchase objections through strategic question selection
+         pt-50 provides breathing room after previous content while maintaining engagement -->
 
       <section
         id="faq"
@@ -1454,19 +1708,24 @@
         data-scroll-index="7"
       >
         <div class="container">
+          <!-- Section header reframes FAQ as support rather than troubleshooting -->
           <div class="section-head text-center style-4">
             <small class="title_small">Frequently Asked Question</small>
             <h2 class="mb-30">Need A <span> Support? </span></h2>
           </div>
           <div class="content">
             <div class="faq style-3 style-4">
+              <!-- Bootstrap accordion with custom styling for professional appearance -->
               <div class="accordion" id="accordionSt4">
                 <div class="row gx-5">
+                  <!-- Constrained width with responsive padding ensures optimal reading experience -->
                   <div
                     class="col-12 col-md-10 col-lg-8 mx-auto px-3 px-md-4 px-lg-5"
                   >
+                    <!-- Q1: WhatsApp Business API - Educates users on core platform requirement -->
                     <div class="accordion-item border-bottom rounded-0">
                       <h2 class="accordion-header" id="heading11">
+                        <!-- collapsed state requires user interaction to reveal technical details -->
                         <button
                           class="accordion-button collapsed rounded-0 py-4"
                           type="button"
@@ -1485,19 +1744,22 @@
                         aria-labelledby="heading11"
                         data-bs-parent="#accordionSt4"
                       >
+                        <!-- Answer explains scale requirements and business value -->
                         <div class="accordion-body">
                           The WhatsApp Business API is built for medium to large
                           businesses to communicate with customers at scale. It
                           enables automated messaging, real-time support, and
                           notifications through a verified business account.
-                          It’s essential for professional engagement, workflow
+                          It's essential for professional engagement, workflow
                           automation, and integrating WhatsApp into your
                           business systems.
                         </div>
                       </div>
                     </div>
+                    <!-- Q2: CRM Integration - Addresses existing system compatibility concerns -->
                     <div class="accordion-item border-bottom rounded-0">
                       <h2 class="accordion-header" id="heading12">
+                        <!-- Not collapsed - this question is pre-expanded as most common concern -->
                         <button
                           class="accordion-button py-4"
                           type="button"
@@ -1509,12 +1771,14 @@
                           Can I use my existing CRM or website with WhatsApp?
                         </button>
                       </h2>
+                      <!-- show class makes this answer visible by default -->
                       <div
                         id="collapse12"
                         class="accordion-collapse collapse show rounded-0"
                         aria-labelledby="heading12"
                         data-bs-parent="#accordionSt4"
                       >
+                        <!-- Answer emphasizes seamless integration and existing workflow preservation -->
                         <div class="accordion-body">
                           Absolutely. Our platform integrates seamlessly with
                           popular CRMs and websites. You can trigger WhatsApp
@@ -1523,6 +1787,7 @@
                         </div>
                       </div>
                     </div>
+                    <!-- Q3: Chatbot Customization - Addresses flexibility and AI training capabilities -->
                     <div class="accordion-item border-bottom rounded-0">
                       <h2 class="accordion-header" id="heading13">
                         <button
@@ -1542,6 +1807,7 @@
                         aria-labelledby="heading13"
                         data-bs-parent="#accordionSt4"
                       >
+                        <!-- Answer highlights visual builder and AI training to appeal to different skill levels -->
                         <div class="accordion-body">
                           Yes — completely. Our visual chatbot builder lets you
                           create conditional flows, lead capture forms, and
@@ -1551,6 +1817,7 @@
                         </div>
                       </div>
                     </div>
+                    <!-- Q4: Timeline - Addresses urgency and implementation speed -->
                     <div class="accordion-item border-0 rounded-0">
                       <h2 class="accordion-header" id="heading4">
                         <button
@@ -1570,6 +1837,7 @@
                         aria-labelledby="heading4"
                         data-bs-parent="#accordionSt4"
                       >
+                        <!-- Answer provides realistic timeframe while emphasizing team support -->
                         <div class="accordion-body">
                           Typically, account verification and setup take 3–7
                           business days. Once that's done, we can deploy your
@@ -1587,20 +1855,25 @@
           </div>
         </div>
       </section>
-      <!-- ======================= Section End: FAQ ======================= -->
+      <!-- FAQ section strategically addresses top objections while building confidence in platform capabilities
+         Question selection focuses on technical requirements, compatibility, and implementation timeline -->
     </main>
     <!--End-Contents-->
 
     <!-- ====== start footer ====== -->
+    <!-- Main footer section with CTA form and navigation - uses data-scroll-index for smooth scrolling navigation -->
     <footer class="style-4" data-scroll-index="8">
       <div class="container">
         <div class="row">
+          <!-- Left column: Value proposition and CTA headline -->
           <div class="col-lg-6">
             <div class="section-head style-4">
+              <!-- Primary conversion-focused headline with span for styling emphasis -->
               <h2 class="mb-10">
                 Ready to Supercharge Your Business with <br />
                 <span> WhatsApp Automation? </span>
               </h2>
+              <!-- Supporting text that reinforces value proposition with explicit line breaks for visual control -->
               <p>
                 Transform your customer experience with intelligent, real-time
                 <br />
@@ -1608,16 +1881,22 @@
               </p>
             </div>
           </div>
+
+          <!-- Right column: Lead capture form -->
           <div class="col-lg-6">
             <div class="cta-form-container">
+              <!-- Empty header div likely used for background styling or spacing -->
               <div class="cta-form-header"></div>
+
+              <!-- Form headline emphasizing quick setup time to reduce friction -->
               <h3 class="section-header">
                 Get started in
-
                 <span> 2 minutes. </span>
               </h3>
 
+              <!-- Lead qualification form collecting business context for better sales follow-up -->
               <form class="cta-form" id="consultationForm">
+                <!-- Standard contact fields with consistent icon pattern for visual hierarchy -->
                 <div class="form-group">
                   <input
                     type="text"
@@ -1629,6 +1908,7 @@
                 </div>
 
                 <div class="form-group">
+                  <!-- Using tel input type for mobile keyboard optimization -->
                   <input
                     type="tel"
                     class="form-control"
@@ -1648,6 +1928,7 @@
                   <i class="fas fa-building form-icon"></i>
                 </div>
 
+                <!-- Business size selector for lead qualification and pricing tier determination -->
                 <div class="form-group">
                   <select class="form-control" required>
                     <option value="">Business Size</option>
@@ -1665,12 +1946,15 @@
                   <i class="fas fa-users form-icon"></i>
                 </div>
 
+                <!-- Multi-element button structure allows for complex animations and hover effects -->
                 <button type="submit" class="btn-cta">
                   <span class="btn-text">Book Free Consultation</span>
                   <i class="fas fa-arrow-right btn-icon"></i>
+                  <!-- Separate background div enables advanced CSS animations without affecting text -->
                   <div class="btn-bg"></div>
                 </button>
 
+                <!-- Trust signal to address privacy concerns and reduce form abandonment -->
                 <p class="form-disclaimer">
                   <i class="fas fa-lock"></i>
                   Your information is secure and will never be shared
@@ -1681,19 +1965,25 @@
         </div>
       </div>
 
+      <!-- Secondary footer section with navigation and branding -->
       <div class="foot mt-80">
         <div class="row align-items-center">
+          <!-- Logo section taking minimal space -->
           <div class="col-lg-2">
             <div class="logo">
               <img src="assets/img/logos/evoglad_logo.png" alt="" />
             </div>
           </div>
+
+          <!-- Main navigation links taking majority of horizontal space -->
           <div class="col-lg-8">
             <ul class="links">
+              <!-- Home link with active state - likely managed by JavaScript based on current page -->
               <li>
                 <a href="home-app-landing.html" class="active">Home</a>
               </li>
-              
+
+              <!-- Hash links for smooth scrolling to page sections -->
               <li>
                 <a href="#channels">Channel</a>
               </li>
@@ -1706,7 +1996,8 @@
               <li>
                 <a href="#why-choose-us">About</a>
               </li>
-              
+
+              <!-- Legal pages as separate HTML files for SEO and compliance -->
               <li>
                 <a href="terms-of-service.html">Terms of Service</a>
               </li>
@@ -1720,14 +2011,18 @@
           </div>
         </div>
       </div>
+
+      <!-- Copyright notice with current year and brand link -->
       <div class="copywrite text-center">
         <small class="small">
           © 2025 Copyrights by
+          <!-- Brand link with styling classes for visual emphasis -->
           <a href="#" class="fw-bold text-decoration-underline">Evoglad</a>
           All Rights Reserved.
         </small>
       </div>
 
+      <!-- Decorative wave image positioned absolutely via CSS for visual design -->
       <img src="assets/img/footer/footer_wave.png" alt="" class="wave" />
     </footer>
     <!-- ====== end footer ====== -->
