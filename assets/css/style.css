@@ -637,7 +637,7 @@ img {
 p {
   font-size: 14px;
   line-height: 1.7;
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 .bi {
@@ -2212,7 +2212,7 @@ small.text {
 }
 .section-head.style-4 h2 {
   font-size: 40px;
-  line-height: 1.3;
+  line-height: 1.1;
   color: #000;
 }
 .section-head.style-4 h2 span {
@@ -19857,7 +19857,7 @@ footer.style-16 .form-check-input:checked {
   }
 
   .section-head h2 {
-    letter-spacing: 3px;
+    letter-spacing: 1.1px;
     margin-bottom: 30px;
   }
 
@@ -20121,7 +20121,7 @@ footer.style-16 .form-check-input:checked {
     margin-bottom: 50px;
   }
   header.style-4 .content .info h1 {
-    font-size: 25px;
+    font-size: 32px;
     line-height: 40px;
     margin-bottom: 15px !important;
   }
@@ -20140,7 +20140,7 @@ footer.style-16 .form-check-input:checked {
   header.style-4 .content .info .small,
   header.style-4 .content .info small,
   header.style-4 .content .info .btn {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .clients.style-4 .client-logos .img {
@@ -20646,7 +20646,8 @@ footer.style-16 .form-check-input:checked {
   }
 
   .section-head.style-4 h2 {
-    font-size: 18px;
+    font-size: 28px;
+    font-weight: bold
   }
 
   .chat-banner.style-7 .info h3 {
