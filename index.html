@@ -96,7 +96,7 @@
           <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-uppercase">
             <!-- Home navigation item with active state -->
             <li class="nav-item">
-              <a class="nav-link active" href="#home">Home</a>
+              <a class="nav-link active" href="index.html">Home</a>
             </li>
 
             <!-- Single-level navigation items using hash links for smooth scrolling -->
@@ -224,8 +224,6 @@
                     </small>
                   </a>
                 </div>
-
-
               </div>
             </div>
 
@@ -726,62 +724,9 @@
 
                   <!-- Another accordion for advanced features -->
                   <div class="faq style-3 style-4">
-                    <div class="accordion" id="accordionExample">
-                      <!-- Multi-agent support feature -->
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="heading2">
-                          <button
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapse2"
-                            aria-expanded="false"
-                            aria-controls="collapse2"
-                          >
-                            Multi-Agent Chat Support Platform
-                          </button>
-                        </h2>
-                        <div
-                          id="collapse2"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="heading2"
-                          data-bs-parent="#accordionExample"
-                        >
-                          <div class="accordion-body">
-                            Manage customer conversations with multiple agents
-                            under a single verified WhatsApp number.
-                          </div>
-                        </div>
-                      </div>
+                    <div class="accordion" id="accordionAutomation">
+                      <!-- Fourth accordion item: Multi-Agent Chat Support Platform (default open) -->
 
-                      <!-- Broadcast campaigns feature -->
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="heading3">
-                          <button
-                            class="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapse3"
-                            aria-expanded="false"
-                            aria-controls="collapse3"
-                          >
-                            Broadcast Campaigns
-                          </button>
-                        </h2>
-                        <!-- Note: Content seems mismatched - shows "Analytics and Reporting" instead of broadcast info -->
-                        <div
-                          id="collapse3"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="heading3"
-                          data-bs-parent="#accordionExample"
-                        >
-                          <div class="accordion-body">
-                            Analytics and Reporting
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Analytics feature (default open in this section) -->
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="heading1">
                           <button
@@ -792,14 +737,69 @@
                             aria-expanded="true"
                             aria-controls="collapse1"
                           >
-                            Analytics and Reporting
+                            Multi-Agent Chat Support Platform
                           </button>
                         </h2>
                         <div
                           id="collapse1"
                           class="accordion-collapse collapse show"
                           aria-labelledby="heading1"
-                          data-bs-parent="#accordionExample"
+                          data-bs-parent="#accordionAutomation"
+                        >
+                          <div class="accordion-body">
+                            Manage customer conversations with multiple agents
+                            under a single verified WhatsApp number.
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Fift accordion item: Broadcast Campaigns -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading2">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse2"
+                            aria-expanded="false"
+                            aria-controls="collapse2"
+                          >
+                            Broadcast Campaigns
+                          </button>
+                        </h2>
+                        <div
+                          id="collapse2"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="heading2"
+                          data-bs-parent="#accordionAutomation"
+                        >
+                          <div class="accordion-body">
+                            Send targeted promotional campaigns using
+                            WhatsApp-approved message templates.
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- sixth accordion item: Analytics and Reporting -->
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading3">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse3"
+                            aria-expanded="false"
+                            aria-controls="collapse3"
+                          >
+                            Analytics and Reporting
+                          </button>
+                        </h2>
+                        <div
+                          id="collapse3"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="heading3"
+                          data-bs-parent="#accordionAutomation"
                         >
                           <div class="accordion-body">
                             Gain real-time insights into message delivery,
@@ -1862,7 +1862,7 @@
 
     <!-- ====== start footer ====== -->
     <!-- Main footer section with CTA form and navigation - uses data-scroll-index for smooth scrolling navigation -->
-    <footer class="style-4" data-scroll-index="8">
+    <footer id="book-consultation" class="style-4" data-scroll-index="8">
       <div class="container">
         <div class="row">
           <!-- Left column: Value proposition and CTA headline -->

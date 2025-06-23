@@ -74,13 +74,11 @@ TABLE OF CONTENTS:-
 ================================================================*/
 /* --------------- variable --------------- */
 :root {
-  --color-main: #0066ff;
-  --color-primary: #0066ff;
+  --color-main: #25d366;
+  --whatsapp-green: #25d366;
+  --color-primary: #128c7e;
   --color-secondary: #02b5ff;
-  --color-blue2: #4a00e1;
   --color-green4: #00b36b;
-  --color-blue5: #157efb;
-  --color-blue6: #6640f4;
   --color-blue7: #8169f1;
   --color-blue8: #291554;
   --color-lightBlue: #15f1ff;
@@ -96,7 +94,7 @@ TABLE OF CONTENTS:-
   --color-yellowGreen: #cef54b;
   --color-gray: #eef4f8;
   --color-gray2: #f3fcf8;
-  --color-main-grad: linear-gradient(to right, #0c3df4 0%, #02b5ff 100%);
+  --color-main-grad: linear-gradient(135deg, #10b981, #34d399);
   --whatsapp-green: #25d366;
   --whatsapp-dark: #128c7e;
   --whatsapp-light: #dcf8c6;
@@ -176,15 +174,15 @@ TABLE OF CONTENTS:-
 }
 
 .color-blue2 {
-  color: var(--color-blue2) !important;
+  color: var( --color-green) !important;
 }
 
 .bg-blue2 {
-  background-color: var(--color-blue2) !important;
+  background-color: var( --color-green) !important;
 }
 
 .border-blue2 {
-  border-color: var(--color-blue2) !important;
+  border-color: var( --color-green) !important;
 }
 
 .color-green4 {
@@ -200,27 +198,27 @@ TABLE OF CONTENTS:-
 }
 
 .color-blue5 {
-  color: var(--color-blue5) !important;
+  color: var(--color-main) !important;
 }
 
 .bg-blue5 {
-  background-color: var(--color-blue5) !important;
+  background-color: var(--color-green) !important;
 }
 
 .border-blue5 {
-  border-color: var(--color-blue5) !important;
+  border-color: var(--color-main) !important;
 }
 
 .color-blue6 {
-  color: var(--color-blue6) !important;
+  color: var(--whatsapp-green) !important;
 }
 
 .bg-blue6 {
-  background-color: var(--color-blue6) !important;
+  background-color: var(--whatsapp-green) !important;
 }
 
 .border-blue6 {
-  border-color: var(--color-blue6) !important;
+  border-color: var(--whatsapp-green) !important;
 }
 
 .color-blue7 {
@@ -241,15 +239,15 @@ TABLE OF CONTENTS:-
   transition: all 0.3s ease;
 }
 .hover-blue7:hover {
-  background-color: var(--color-blue7) !important;
+  background-color: var(--color-green) !important;
 }
 
 .color-blue8 {
-  color: var(--color-blue8) !important;
+  color: var(--color-green) !important;
 }
 
 .bg-blue8 {
-  background-color: var(--color-blue8) !important;
+  background-color: var(--color-green) !important;
 }
 
 .border-blue8 {
@@ -262,7 +260,7 @@ TABLE OF CONTENTS:-
   transition: all 0.3s ease;
 }
 .hover-blue8:hover {
-  background-color: var(--color-blue8) !important;
+  background-color: var(--color-green) !important;
 }
 
 .color-orange1 {
@@ -744,7 +742,7 @@ small.text {
   position: relative;
 }
 .slider-style-6 .swiper-pagination-bullet-active {
-  background-color: var(--color-blue6);
+  background-color: var(--whatsapp-green);
 }
 .slider-style-6 .swiper-button-next,
 .slider-style-6 .swiper-button-prev {
@@ -754,7 +752,7 @@ small.text {
 }
 .slider-style-6 .swiper-button-next:hover,
 .slider-style-6 .swiper-button-prev:hover {
-  background: var(--color-blue6);
+  background: var(--whatsapp-green);
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1154,13 +1152,13 @@ small.text {
   font-size: 11px;
 }
 .pagination.color-5 a:hover {
-  color: var(--color-blue5) !important;
-  border-color: var(--color-blue5);
+  color: var(--color-main) !important;
+  border-color: var(--color-main);
 }
 .pagination.color-5 a.active {
   color: #fff;
-  border-color: var(--color-blue5);
-  background-color: var(--color-blue5);
+  border-color: var(--color-main);
+  background-color: var(--color-main);
 }
 .pagination.color-4 a:hover {
   color: var(--color-green4) !important;
@@ -1961,7 +1959,7 @@ small.text {
 }
 .butn.butn-blue6,
 .btn.butn-blue6 {
-  background: var(--color-blue6);
+  background: var(--whatsapp-green);
 }
 .butn.butn-blue6 span,
 .butn.butn-blue6 small,
@@ -1971,7 +1969,7 @@ small.text {
 }
 .butn.blue5-3Dbutn,
 .btn.blue5-3Dbutn {
-  background: var(--color-blue5);
+  background: var(--color-main);
   -webkit-box-shadow: 0px 4px 0px 0px var(--color-green4);
   box-shadow: 0px 4px 0px 0px var(--color-green4);
   -webkit-filter: drop-shadow(0 13px 20px #07397235);
@@ -2014,7 +2012,7 @@ small.text {
 }
 .butn.hover-blue2:hover,
 .btn.hover-blue2:hover {
-  background: var(--color-blue2);
+  background: var( --color-green);
   border-color: transparent !important;
 }
 .butn.hover-blue2:hover span,
@@ -2036,7 +2034,7 @@ small.text {
 }
 .butn.hover-blue5:hover,
 .btn.hover-blue5:hover {
-  background: var(--color-blue5) !important;
+  background: var(--color-main) !important;
   border-color: transparent !important;
 }
 .butn.hover-blue5:hover span,
@@ -2181,7 +2179,7 @@ small.text {
 }
 .section-head.style-3 h3 span {
   font-weight: 400;
-  color: var(--color-blue2);
+  color: var( --color-green);
   font-style: italic;
   position: relative;
 }
@@ -2234,7 +2232,7 @@ small.text {
   font-size: 45px;
 }
 .section-head.style-5 h2 span {
-  color: var(--color-blue5);
+  color: var(--color-main);
   position: relative;
   display: inline-block;
   padding: 0 5px;
@@ -2247,7 +2245,7 @@ small.text {
   bottom: 0;
   width: 100%;
   height: 40%;
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
   opacity: 8%;
 }
 .section-head.style-5 p {
@@ -2491,7 +2489,7 @@ small.text {
 .top-navbar.style-5 {
   padding: 10px 15px;
   text-align: center;
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
 }
 
 /* --------------- top navbar style-7 --------------- */
@@ -3099,7 +3097,7 @@ small.text {
 }
 .navbar.style-5 .nav-item .nav-link:hover,
 .navbar.style-5 .nav-item .nav-link.active {
-  color: var(--color-blue5);
+  color: var(--color-main);
 }
 .navbar.style-5 .nav-item .nav-link .bi {
   position: relative;
@@ -3161,7 +3159,7 @@ small.text {
 }
 .navbar.style-6 .nav-item .nav-link:hover,
 .navbar.style-6 .nav-item .nav-link.active {
-  color: var(--color-blue6);
+  color: var(--whatsapp-green);
 }
 .navbar.style-6 .nav-item:last-of-type .nav-link::after {
   display: none;
@@ -3726,7 +3724,7 @@ header.style-2 .content .brands {
 }
 
 header.style-3 {
-  background-color: var(--color-blue2);
+  background-color: var( --color-green);
   position: relative;
   padding: 100px 0 30px;
 }
@@ -5219,7 +5217,7 @@ header.style-16 .screen-img .diamond {
   margin: 15px 0;
 }
 .about.style-3 .info ul li i {
-  color: var(--color-blue2);
+  color: var( --color-green);
 }
 .about.style-3 .img-left {
   position: absolute;
@@ -5487,7 +5485,7 @@ header.style-16 .screen-img .diamond {
   bottom: 0;
   height: 1px;
   width: 0%;
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -5510,7 +5508,7 @@ header.style-16 .screen-img .diamond {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: var(--color-blue5);
+  background: var(--color-main);
   color: #fff;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -5674,8 +5672,8 @@ header.style-16 .screen-img .diamond {
   -ms-flex-pack: center;
   justify-content: center;
   border-radius: 50%;
-  border: 1px solid var(--color-blue6);
-  color: var(--color-blue6);
+  border: 1px solid var(--whatsapp-green);
+  color: var(--whatsapp-green);
   font-size: 21px;
   margin-right: 5px;
 }
@@ -6205,7 +6203,7 @@ header.style-16 .screen-img .diamond {
   text-transform: uppercase;
 }
 .services.style-3 .service-card.style-3 .info a:hover {
-  color: var(--color-blue2);
+  color: var( --color-green);
 }
 
 .services-slider.style-6 .swiper-container {
@@ -7285,7 +7283,7 @@ header.style-16 .screen-img .diamond {
   box-shadow: 0px 40px 35px 0px #51558622;
 }
 .project-card.style-6 a:hover {
-  color: var(--color-blue6);
+  color: var(--whatsapp-green);
 }
 .project-card.style-6 .img {
   height: 240px;
@@ -7309,14 +7307,14 @@ header.style-16 .screen-img .diamond {
   font-size: 21px;
 }
 .project-card.style-6 .info .title:hover {
-  color: var(--color-blue6);
+  color: var(--whatsapp-green);
 }
 .project-card.style-6 .info .title:hover a {
-  color: var(--color-blue6);
+  color: var(--whatsapp-green);
 }
 .project-card.style-6 .info small {
   font-size: 11px;
-  color: var(--color-blue6);
+  color: var(--whatsapp-green);
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -8179,7 +8177,7 @@ header.style-16 .screen-img .diamond {
   font-size: 12px;
 }
 .testimonials.style-3 .testimonial-slider.style-3 .swiper-button-next:hover {
-  background: var(--color-blue2);
+  background: var( --color-green);
 }
 .testimonials.style-3 .testimonial-slider.style-3 .swiper-button-prev {
   top: -65px;
@@ -8193,7 +8191,7 @@ header.style-16 .screen-img .diamond {
   font-size: 12px;
 }
 .testimonials.style-3 .testimonial-slider.style-3 .swiper-button-prev:hover {
-  background: var(--color-blue2);
+  background: var( --color-green);
 }
 
 .testimonials.style-4 .content {
@@ -8346,7 +8344,7 @@ header.style-16 .screen-img .diamond {
   box-shadow: 0px 30px 60px 0px #0a2b5326;
 }
 .testi-card.style-5:hover .card-title {
-  color: var(--color-blue5);
+  color: var(--color-main);
 }
 .testi-card.style-5 .stars i {
   color: #27a700;
@@ -8374,7 +8372,7 @@ header.style-16 .screen-img .diamond {
 .testimonials.style-6 .testi-slider.style-6 .icon {
   width: 95px;
   height: 95px;
-  background-color: var(--color-blue6);
+  background-color: var(--whatsapp-green);
   color: #fff;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -8403,7 +8401,7 @@ header.style-16 .screen-img .diamond {
 }
 .testimonials.style-6 .testi-slider.style-6 .swiper-button-next:hover,
 .testimonials.style-6 .testi-slider.style-6 .swiper-button-prev:hover {
-  background-color: var(--color-blue6);
+  background-color: var(--whatsapp-green);
 }
 .testimonials.style-6 .testi-slider.style-6 .swiper-button-next {
   right: auto;
@@ -9254,7 +9252,7 @@ header.style-16 .screen-img .diamond {
 }
 .pricing-card.style-3 .card-head .price h5 {
   font-size: 20px;
-  color: var(--color-blue2);
+  color: var( --color-green);
   font-weight: bold;
 }
 .pricing-card.style-3 .card-body {
@@ -9277,12 +9275,12 @@ header.style-16 .screen-img .diamond {
 .pricing-card.style-3 .card-body li i {
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  color: var(--color-blue2);
+  color: var( --color-green);
   font-size: 20px;
   margin-right: 10px;
 }
 .pricing-card.style-3.dark-card {
-  background-color: var(--color-blue2);
+  background-color: var( --color-green);
 }
 .pricing-card.style-3.dark-card .card-head {
   border-bottom: 1px solid #9999ff;
@@ -9545,7 +9543,7 @@ header.style-16 .screen-img .diamond {
   .price-bodyTitle
   .pop-info
   i.bttn-info:hover {
-  color: var(--color-blue5);
+  color: var(--color-main);
 }
 .pricing.style-5
   .content
@@ -9576,7 +9574,7 @@ header.style-16 .screen-img .diamond {
   .pop-info
   .hidden_content
   .title {
-  color: var(--color-blue5);
+  color: var(--color-main);
   text-transform: uppercase;
   margin-bottom: 5px;
   font-size: 13px;
@@ -9611,7 +9609,7 @@ header.style-16 .screen-img .diamond {
   min-height: max-content;
 }
 .pricing.style-5 .content .price-body .price-bodyItems .price-item i {
-  color: var(--color-blue5);
+  color: var(--color-main);
   font-size: 20px;
 }
 .pricing.style-5 .content .price-body .price-bodyItems .price-item span {
@@ -10302,11 +10300,11 @@ header.style-16 .screen-img .diamond {
   color: var(--color-main);
 }
 .team.style-1.team-blue2 .content .team_box .social_icons a:hover {
-  background: var(--color-blue2);
+  background: var( --color-green);
   color: #fff;
 }
 .team.style-1.team-blue2 .content .team_box:hover .info h6 {
-  color: var(--color-blue2);
+  color: var( --color-green);
 }
 
 /* --------------- team style-6 --------------- */
@@ -10368,7 +10366,7 @@ header.style-16 .screen-img .diamond {
   transition: all 0.5s ease;
 }
 .team-card.style-6 .img .social-icons a:hover {
-  background-color: var(--color-blue6);
+  background-color: var(--whatsapp-green);
   color: #fff;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -10420,7 +10418,7 @@ header.style-16 .screen-img .diamond {
   transform: translateY(0);
 }
 .team-card.style-6:hover .info h6 {
-  color: var(--color-blue6);
+  color: var(--whatsapp-green);
 }
 
 /* --------------- team style-10 --------------- */
@@ -10808,7 +10806,7 @@ header.style-16 .screen-img .diamond {
   background-color: #9994;
 }
 .blog.style-6 a:hover {
-  color: var(--color-blue6);
+  color: var(--whatsapp-green);
 }
 
 .blog-card.style-6 {
@@ -11339,7 +11337,7 @@ header.style-16 .screen-img .diamond {
 }
 .faq.style-3 .accordion-item .accordion-button:not(.collapsed) {
   background-color: #fff;
-  color: var(--color-blue2);
+  color: var( --color-green);
   padding-top: 30px;
 }
 .faq.style-3 .accordion-item .accordion-collapse {
@@ -12231,7 +12229,7 @@ header.style-16 .screen-img .diamond {
   box-shadow: 0px 46px 77px 0px #0a2b5326;
 }
 .features-card.style-5:hover .card-title {
-  color: var(--color-blue5);
+  color: var(--color-main);
 }
 .features-card.style-5 .icon {
   margin-bottom: 40px;
@@ -12953,7 +12951,7 @@ header.style-16 .screen-img .diamond {
 }
 .number-card.style-6 h2 {
   font-size: 45px;
-  color: var(--color-blue6);
+  color: var(--whatsapp-green);
 }
 .number-card.style-6 .text {
   font-size: 15px;
@@ -13319,7 +13317,7 @@ header.style-16 .screen-img .diamond {
 ================================================================*/
 /* --------------- chat-banner styles --------------- */
 .chat-banner.style-3 {
-  background-color: var(--color-blue2);
+  background-color: var( --color-green);
   position: relative;
 }
 .chat-banner.style-3::after {
@@ -13511,7 +13509,7 @@ header.style-16 .screen-img .diamond {
 /* --------------- contact style-6 --------------- */
 .contact.style-6 .content {
   position: relative;
-  border-top: 10px solid var(--color-blue6);
+  border-top: 10px solid var(--whatsapp-green);
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
   padding: 100px 15px;
@@ -13575,7 +13573,7 @@ header.style-16 .screen-img .diamond {
 }
 .contact.style-6 .form-group .form-control:focus,
 .contact.style-6 .form-group .form-select:focus {
-  border-color: var(--color-blue6);
+  border-color: var(--whatsapp-green);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -14653,7 +14651,7 @@ footer.style-3 .items .socail-icons {
   margin-top: 30px;
 }
 footer.style-3 .items .socail-icons a:hover {
-  background-color: var(--color-blue2) !important;
+  background-color: var( --color-green) !important;
   color: #fff !important;
 }
 footer.style-3 .items ul li {
@@ -14663,7 +14661,7 @@ footer.style-3 .items ul li a {
   font-size: 12px;
 }
 footer.style-3 .items ul li a:hover {
-  color: var(--color-blue2);
+  color: var( --color-green);
 }
 footer.style-3 .foot {
   padding: 35px 0 30px;
@@ -14751,7 +14749,7 @@ footer.style-5 .items .socail-icons {
   margin-top: 30px;
 }
 footer.style-5 .items .socail-icons a:hover {
-  background-color: var(--color-blue5) !important;
+  background-color: var(--color-main) !important;
   color: #fff !important;
 }
 footer.style-5 .items ul li {
@@ -14761,7 +14759,7 @@ footer.style-5 .items ul li a {
   font-size: 12px;
 }
 footer.style-5 .items ul li a:hover {
-  color: var(--color-blue5);
+  color: var(--color-main);
 }
 footer.style-5 .foot {
   padding: 35px 0 30px;
@@ -14786,7 +14784,7 @@ footer.style-6 .items .socail-icons {
   margin-top: 30px;
 }
 footer.style-6 .items .socail-icons a:hover {
-  background-color: var(--color-blue6) !important;
+  background-color: var(--whatsapp-green) !important;
   color: #fff !important;
 }
 footer.style-6 .items ul li {
@@ -14796,7 +14794,7 @@ footer.style-6 .items ul li a {
   font-size: 12px;
 }
 footer.style-6 .items ul li a:hover {
-  color: var(--color-blue6);
+  color: var(--whatsapp-green);
 }
 footer.style-6 .form .form-group {
   position: relative;
@@ -14821,7 +14819,7 @@ footer.style-6 .form .form-group button {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background-color: var(--color-blue6);
+  background-color: var(--whatsapp-green);
   border: 0;
   color: #fff;
 }
@@ -15990,7 +15988,7 @@ footer.style-16 .form-check-input:checked {
   .portfolio-projects.style-1
   .controls
   button.mixitup-control-active {
-  color: var(--color-blue5);
+  color: var(--color-main);
 }
 .portfolio-page.style-1 .download.style-5 {
   position: relative;
@@ -16105,7 +16103,7 @@ footer.style-16 .form-check-input:checked {
   margin: 20px 3px 0;
 }
 .single-project.style-5 .share .social-icon:hover {
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
   color: #fff;
 }
 .single-project.style-5 .share .social-icon.hover-blue4:hover {
@@ -16113,14 +16111,14 @@ footer.style-16 .form-check-input:checked {
   color: #fff;
 }
 .single-project.style-5 .projects .project-card.style-6:hover .info .title {
-  color: var(--color-blue5);
+  color: var(--color-main);
 }
 .single-project.style-5 .projects .project-card.style-6 .info small {
-  color: var(--color-blue5);
+  color: var(--color-main);
 }
 .single-project.style-5 .slider-style-6 .swiper-button-next:hover,
 .single-project.style-5 .slider-style-6 .swiper-button-prev:hover {
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
 }
 
 /* ===============================================================
@@ -16176,7 +16174,7 @@ footer.style-16 .form-check-input:checked {
   border-radius: 50%;
   color: #fff;
   font-size: 25px;
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
   -webkit-box-shadow: 0px 5px 0px 0px var(--color-green4);
   box-shadow: 0px 5px 0px 0px var(--color-green4);
   -webkit-filter: drop-shadow(0 13px 20px #0008);
@@ -16221,11 +16219,11 @@ footer.style-16 .form-check-input:checked {
   z-index: 2;
 }
 .about-page .contact .content {
-  border-top: 10px solid var(--color-blue5);
+  border-top: 10px solid var(--color-main);
 }
 .about-page .contact.style-6 .form-group .form-control:focus,
 .about-page .contact.style-6 .form-group .form-select:focus {
-  border-color: var(--color-blue5);
+  border-color: var(--color-main);
 }
 
 .culture.style-5 .culture-card {
@@ -16496,7 +16494,7 @@ footer.style-16 .form-check-input:checked {
 /* --------------- contact page styles --------------- */
 .contact-page.style-5 .contact.style-6 .form-group .form-control:focus,
 .contact-page.style-5 .contact.style-6 .form-group .form-select:focus {
-  border-color: var(--color-blue5);
+  border-color: var(--color-main);
 }
 .contact-page.style-5 .map iframe {
   width: 100%;
@@ -16725,7 +16723,7 @@ footer.style-16 .form-check-input:checked {
   transition-delay: 0.2s;
 }
 .blog-page.style-5 .blog-details-slider .content-card a:hover {
-  color: var(--color-blue5);
+  color: var(--color-main);
 }
 .blog-page.style-5
   .blog-details-slider
@@ -16767,7 +16765,7 @@ footer.style-16 .form-check-input:checked {
   .blog-details-slider
   .swiper-pagination
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
 }
 .blog-page.style-5 .blog-details-slider .swiper-button-next,
 .blog-page.style-5 .blog-details-slider .swiper-button-prev {
@@ -16835,10 +16833,10 @@ footer.style-16 .form-check-input:checked {
   object-fit: cover;
 }
 .blog-page.style-5 .popular-posts .card .title a:hover {
-  color: var(--color-blue5);
+  color: var(--color-main);
 }
 .blog-page.style-5 .popular-posts .card a:hover {
-  color: var(--color-blue5);
+  color: var(--color-main);
 }
 .blog-page.style-5 .all-news .card .img {
   height: 200px;
@@ -16859,7 +16857,7 @@ footer.style-16 .form-check-input:checked {
   width: 100%;
 }
 .blog-page.style-5 .all-news .card a:hover {
-  color: var(--color-blue5);
+  color: var(--color-main);
 }
 .blog-page.style-5 .side-blog {
   position: sticky;
@@ -16910,7 +16908,7 @@ footer.style-16 .form-check-input:checked {
   color: #666;
 }
 .blog-page.style-5 .side-blog .side-recent-post .post-card:hover .inf h6 {
-  color: var(--color-blue5);
+  color: var(--color-main);
 }
 .blog-page.style-5 .side-blog .side-categories .cat-item {
   display: -webkit-box;
@@ -16926,7 +16924,7 @@ footer.style-16 .form-check-input:checked {
   border-bottom: 1px solid #9995;
 }
 .blog-page.style-5 .side-blog .side-categories .cat-item:hover {
-  color: var(--color-blue5);
+  color: var(--color-main);
   font-weight: bold;
 }
 .blog-page.style-5 .side-blog .side-newsletter {
@@ -16958,7 +16956,7 @@ footer.style-16 .form-check-input:checked {
   margin: 0 3px;
 }
 .blog-page.style-5 .side-blog .side-share .social-icon:hover {
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
   color: #fff;
 }
 .blog-page.style-5 .side-blog .side-insta .insta-img {
@@ -17033,7 +17031,7 @@ footer.style-16 .form-check-input:checked {
   margin-bottom: 4px;
 }
 .blog-page.style-5 .side-tags a:hover {
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
   color: #fff;
 }
 .blog-page.style-5 .blog-share .share-icons a i {
@@ -17073,7 +17071,7 @@ footer.style-16 .form-check-input:checked {
   background-color: #dce1e5;
 }
 .blog-page.style-5 .blog-comments .comment-card .social-icons a:hover {
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
   color: #fff;
 }
 .blog-page.style-5 .related-postes-slider .swiper-slide-prev {
@@ -17106,7 +17104,7 @@ footer.style-16 .form-check-input:checked {
 }
 .blog-page.style-5 .related-postes-slider .swiper-button-next:hover,
 .blog-page.style-5 .related-postes-slider .swiper-button-prev:hover {
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
   color: #fff;
 }
 .blog-page.style-5 .related-postes-slider .swiper-button-next,
@@ -17198,7 +17196,7 @@ footer.style-16 .form-check-input:checked {
   .category-checkRadio
   .form-check-input:checked
   ~ .form-check-label {
-  color: var(--color-blue5);
+  color: var(--color-main);
 }
 .shop-page .filter .filter-card .accordion .accordion-button {
   color: #000;
@@ -17215,7 +17213,7 @@ footer.style-16 .form-check-input:checked {
   background-position: center;
 }
 .shop-page .filter .filter-card .accordion .accordion-button:not(.collapsed) {
-  color: var(--color-blue5);
+  color: var(--color-main);
 }
 .shop-page .filter .filter-card .filter-card-item {
   padding-bottom: 15px;
@@ -17257,7 +17255,7 @@ footer.style-16 .form-check-input:checked {
   .filter-card-item
   .filter-card-body
   .filter-card-scroll::-webkit-scrollbar-thumb {
-  background: var(--color-blue5);
+  background: var(--color-main);
   border-radius: 10px;
 }
 .shop-page
@@ -17266,7 +17264,7 @@ footer.style-16 .form-check-input:checked {
   .filter-card-item
   .filter-card-body
   .filter-card-scroll::-webkit-scrollbar-corner {
-  background: var(--color-blue5);
+  background: var(--color-main);
   border-radius: 10px;
 }
 .shop-page .filter .filter-card .filter-card-item .search-group {
@@ -17338,7 +17336,7 @@ footer.style-16 .form-check-input:checked {
 .shop-page .filter .filter-card .slider-range-content .amount-input button {
   width: 50px;
   height: 50px;
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
   border: 0;
   color: #fff;
   border-radius: 7px;
@@ -17356,7 +17354,7 @@ footer.style-16 .form-check-input:checked {
   .slider-range-content
   .ui-slider-horizontal
   .ui-slider-range {
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
 }
 .shop-page
   .filter
@@ -17399,7 +17397,7 @@ footer.style-16 .form-check-input:checked {
   html
   .ui-button.ui-state-disabled:active {
   border: 0;
-  background: var(--color-blue5);
+  background: var(--color-main);
   border-radius: 50%;
   width: 1em;
   height: 1em;
@@ -17467,7 +17465,7 @@ footer.style-16 .form-check-input:checked {
 .shop-page .products-content .top-filter .r-side .grid-list-btns .bttn:hover,
 .shop-page .products-content .top-filter .r-side .grid-list-btns .bttn.active {
   color: #fff;
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
 }
 .shop-page .products-content .products .product-card {
   border: 1px solid #ededed;
@@ -17566,7 +17564,7 @@ footer.style-16 .form-check-input:checked {
   bottom: 15px;
   left: 15px;
   width: calc(100% - 30px);
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
   padding: 7px 15px;
   -webkit-transform: translateY(70px);
   -ms-transform: translateY(70px);
@@ -17784,7 +17782,7 @@ footer.style-16 .form-check-input:checked {
   .gallery-thumbs
   .swiper-slide.swiper-slide-thumb-active
   .img {
-  border-color: var(--color-blue5);
+  border-color: var(--color-main);
 }
 .product-page .product-slider .gallery-top .swiper-slide .img {
   height: 500px;
@@ -17936,7 +17934,7 @@ footer.style-16 .form-check-input:checked {
   .form-check-input:checked
   ~ .form-check-label
   .color-circle {
-  outline: 1px solid var(--color-blue5);
+  outline: 1px solid var(--color-main);
 }
 .product-page .product-info .qyt-addCart {
   display: -webkit-box;
@@ -17974,7 +17972,7 @@ footer.style-16 .form-check-input:checked {
   font-size: 14px;
 }
 .product-page .product-info .qyt-addCart .btn {
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
   padding: 10px 30px;
   width: 40%;
 }
@@ -18011,7 +18009,7 @@ footer.style-16 .form-check-input:checked {
   margin-top: 40px;
 }
 .product-page .product-info .socail-icons a:hover {
-  background-color: var(--color-blue5) !important;
+  background-color: var(--color-main) !important;
   color: #fff !important;
 }
 .product-page .product-details .nav-pills {
@@ -18138,7 +18136,7 @@ footer.style-16 .form-check-input:checked {
   .related-products
   .related-products-slider
   .swiper-button-prev:hover {
-  background: var(--color-blue5);
+  background: var(--color-main);
 }
 .product-page .related-products .related-products-slider .swiper-button-next,
 .product-page
@@ -18263,7 +18261,7 @@ footer.style-16 .form-check-input:checked {
   bottom: 15px;
   left: 15px;
   width: calc(100% - 30px);
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
   padding: 7px 15px;
   -webkit-transform: translateY(70px);
   -ms-transform: translateY(70px);
@@ -18349,13 +18347,13 @@ footer.style-16 .form-check-input:checked {
   color: #999;
 }
 .faq-page.style-5 .faq-tabs .nav .nav-item .nav-card.active {
-  border-color: var(--color-blue5);
+  border-color: var(--color-main);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 .faq-page.style-5 .faq-body .faq-category {
   padding: 50px;
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
   border-radius: 5px;
   color: #fff;
   position: sticky;
@@ -18436,7 +18434,7 @@ footer.style-16 .form-check-input:checked {
   .faq-questions
   .accordion-item
   .accordion-button:not(.collapsed) {
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
   color: #fff;
 }
 .faq-page.style-5
@@ -18545,7 +18543,7 @@ footer.style-16 .form-check-input:checked {
   line-height: 50px;
   top: 0;
   right: 30px;
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
   color: #fff;
   text-align: center;
 }
@@ -18563,7 +18561,7 @@ footer.style-16 .form-check-input:checked {
 }
 .careers-page.style-5 .career-form {
   position: relative;
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
   color: #fff;
 }
 .careers-page.style-5 .career-form .container {
@@ -18707,7 +18705,7 @@ footer.style-16 .form-check-input:checked {
   padding: 6px 15px;
   border-radius: 30px;
   background-color: #edf5ff;
-  color: var(--color-blue5);
+  color: var(--color-main);
 }
 .career-details-page.style-5 .summary-card {
   border: 1px solid #9993;
@@ -18753,7 +18751,7 @@ footer.style-16 .form-check-input:checked {
   line-height: 50px;
   top: 0;
   right: 30px;
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
   color: #fff;
   text-align: center;
 }
@@ -18792,8 +18790,8 @@ footer.style-16 .form-check-input:checked {
 .career-details-page.style-5
   .careers-positions-slider5
   .swiper-button-prev:hover {
-  border: 1px solid var(--color-blue5);
-  background: var(--color-blue5);
+  border: 1px solid var(--color-main);
+  background: var(--color-main);
 }
 .career-details-page.style-5 .careers-positions-slider5 .swiper-button-next,
 .career-details-page.style-5
@@ -18812,7 +18810,7 @@ footer.style-16 .form-check-input:checked {
 }
 .career-details-page.style-5 .career-form {
   position: relative;
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
   color: #fff;
 }
 .career-details-page.style-5 .career-form p {
@@ -19003,7 +19001,7 @@ footer.style-16 .form-check-input:checked {
   background-color: #9999;
 }
 .about-page.style-2 .about.style-2 .info .nav .nav-item .nav-link.active {
-  color: var(--color-blue5);
+  color: var(--color-main);
 }
 .about-page.style-2 .about.style-2 .pattern_l {
   position: absolute;
@@ -19031,7 +19029,7 @@ footer.style-16 .form-check-input:checked {
   position: relative;
 }
 .about-page.style-2 .timeline .card-year h3 {
-  color: var(--color-blue5);
+  color: var(--color-main);
   font-size: 44px;
 }
 .about-page.style-2 .timeline .timeline-content {
@@ -19060,7 +19058,7 @@ footer.style-16 .form-check-input:checked {
   top: calc(50% - 1px);
   width: 28px;
   height: 2px;
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
   z-index: 2;
 }
 .about-page.style-2 .timeline .timeline-content .timeline-card:first-of-type {
@@ -19079,7 +19077,7 @@ footer.style-16 .form-check-input:checked {
   top: 0;
   width: 1px;
   height: 100%;
-  background-color: var(--color-blue5);
+  background-color: var(--color-main);
   z-index: 6;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -19211,7 +19209,7 @@ footer.style-16 .form-check-input:checked {
   .author
   .inf
   p {
-  color: var(--color-blue5);
+  color: var(--color-main);
 }
 .services-details-page.style-5
   .ser-details
@@ -19243,7 +19241,7 @@ footer.style-16 .form-check-input:checked {
   margin: 15px 0;
 }
 .services-details-page.style-5 .side-links .links-card ul li a .icon {
-  color: var(--color-blue5);
+  color: var(--color-main);
   margin-right: 10px;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -19265,7 +19263,7 @@ footer.style-16 .form-check-input:checked {
 }
 .services-details-page.style-5 .side-links .banner1 .title h6 {
   font-weight: 500;
-  color: var(--color-blue5);
+  color: var(--color-main);
   margin-bottom: 10px;
 }
 .services-details-page.style-5 .side-links .banner1 .title h3 {
@@ -19411,7 +19409,7 @@ footer.style-16 .form-check-input:checked {
   width: 100%;
   background-color: #fff;
   border-radius: 5px;
-  border-bottom: 3px solid var(--color-blue5);
+  border-bottom: 3px solid var(--color-main);
 }
 .comming-soon-page.style-5 .comming-soon .content .info .timing .item h2 {
   font-size: calc(2vw + 20px);
@@ -19953,7 +19951,7 @@ footer.style-16 .form-check-input:checked {
 
   .navbar.style-3 {
     position: relative !important;
-    background-color: var(--color-blue2);
+    background-color: var( --color-green);
     padding: 20px 0;
   }
   .navbar.style-3 .navbar-collapse {
@@ -21802,7 +21800,7 @@ footer.style-16 .form-check-input:checked {
 /* SECTION 2: Split Layout */
 .section-2 {
   padding: 80px 0;
-  background: var(--bg-light);
+  background: #ffffff
 }
 
 .section-2 h2 {
@@ -22545,11 +22543,7 @@ footer.style-16 .form-check-input:checked {
 /* ***************************legal-Policy************************/
 
 .legal-header {
-  background: linear-gradient(
-    135deg,
-    var(--whatsapp-green) 0%,
-    var(--whatsapp-dark) 100%
-  );
+    background: linear-gradient(135deg, #10b981, #34d399);
   color: white;
   padding: 4rem 0 3rem;
   margin-bottom: 0;
@@ -22987,8 +22981,9 @@ footer.style-16 .form-check-input:checked {
 
 /* Channel-specific colors */
 .whatsapp {
-  --channel-color: #25d366;
-  --channel-color-dark: #128c7e;
+  --channel-color: #10b981;
+  --channel-color-dark: #34d399;
+
 }
 .instagram {
   --channel-color: #e4405f;
