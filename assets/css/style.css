@@ -1021,8 +1021,8 @@ small.text {
 
 #loading-content:before {
   border: 3px solid transparent;
-  border-top-color: #e9f9f2;
-  border-bottom-color: #e9f9f2;
+  border-top-color: var(--whatsapp-green);
+  border-bottom-color: var(--whatsapp-green);
   border-radius: 50%;
   -webkit-animation: loader 3s linear infinite;
   animation: loader 3s linear infinite;
