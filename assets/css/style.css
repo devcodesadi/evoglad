@@ -102,6 +102,10 @@ TABLE OF CONTENTS:-
   --text-gray: #6c757d;
   --bg-light: #f8f9fa;
   --bg-green: #f3fcf8;
+  --primary-green: #00B36B;
+  --color-green2: #009a5c;
+
+
 }
 
 .color-main {
@@ -1381,7 +1385,7 @@ small.text {
 }
 
 .mt-50 {
-  margin-top: 50px !important;
+  margin-top: 38px !important;
 }
 
 .mt-60 {
@@ -1880,7 +1884,7 @@ small.text {
 /* --------------- buttons styles --------------- */
 .butn,
 .btn {
-  padding: 12px 30px;
+  padding: 16px 32px;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -1892,6 +1896,7 @@ small.text {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  cursor: pointer;
 }
 .butn span,
 .btn span {
@@ -1902,10 +1907,11 @@ small.text {
 }
 .butn small,
 .btn small {
-  font-size: 12px;
+  font-size: 14px;
   position: relative;
   z-index: 2;
   text-transform: capitalize;
+
 }
 .butn.butn-gard::before,
 .btn.butn-gard::before {
@@ -1992,7 +1998,7 @@ small.text {
 }
 .butn:hover,
 .btn:hover {
-  background: var(--color-main);
+  background: var(--color-green2);
   border-color: transparent !important;
 }
 .butn:hover span,
@@ -3860,18 +3866,19 @@ header.style-4 .content .info .title_small {
   color: var(--color-green4);
 }
 header.style-4 .content .info h1 {
-  font-size: 52px;
-  line-height: 60px;
-  color: #000;
+  font-size: 56px;
+  line-height: 64px;
+  color: #111111;
 }
 header.style-4 .content .info h1 span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(135deg, #10b981, #34d399);
+  background-image: linear-gradient(135deg, #00cd7a, #00B36B);
 }
 header.style-4 .content .info .text {
   color: #666;
-  font-size: 15px;
+  font-size: 18px;
+  line-height: 27px;
 }
 header.style-4 .content .info .play-btn {
   display: -webkit-box;
@@ -3914,10 +3921,10 @@ header.style-4 .content .bubble {
 header.style-4 .wave {
   position: absolute;
   left: -3%;
-  bottom: -10px;
+  bottom: -22px;
   width: 106%;
   max-width: unset;
-  height: 240px;
+  height: 160px;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: top;
