@@ -11835,24 +11835,21 @@ header.style-16 .screen-img .diamond {
     linear,
     left top,
     right top,
-    from(#00b36b),
-    color-stop(30%, #00cc88),
-    color-stop(65%, #29d3a1),
-    to(#7ce7c3)
+    from(#00c057),
+
+    to(#009a5c)
   );
   background-image: -o-linear-gradient(
     left,
-    #00b36b 0%,
-    #00cc88 30%,
-    #29d3a1 65%,
-    #7ce7c3 100%
+    #00c057 0%,
+    
+    #009a5c 100%
   );
   background-image: linear-gradient(
     to right,
-    #00b36b 0%,
-    #00cc88 30%,
-    #29d3a1 65%,
-    #7ce7c3 100%
+    #00c057 0%,
+    
+    #009a5c 100%
   );
 }
 .community.style-4 .content .commun-card .inf h5 {
@@ -12629,7 +12626,7 @@ header.style-16 .screen-img .diamond {
 .features.style-14 .nav-pills .nav-link.active {
   color: #fff;
 
-  background: linear-gradient(135deg, #10b981, #34d399);
+  background: linear-gradient(135deg, var(--color-green), var(--color-green2));
 
   box-shadow: 0 10px 30px #cc213155;
 }
@@ -21606,8 +21603,8 @@ footer.style-16 .form-check-input:checked {
 .feature-icon {
   width: 60px;
   height: 60px;
-  background-color: #1cbf7b; /* fallback */
-  background: linear-gradient(135deg, #10b981, #34d399);
+  background-color: var(--color-green2); /* fallback */
+  background: linear-gradient(135deg, var(--color-green), var(--color-green2));
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -22029,7 +22026,7 @@ footer.style-16 .form-check-input:checked {
 
 .nav-pills .nav-link.active {
   background-color: #00b36b; /* fallback */
-  background: linear-gradient(135deg, #10b981, #34d399);
+  background: linear-gradient(135deg, var(--color-green), var(--color-green2));
 
   border-color: var(--whatsapp-dark);
   color: white;
