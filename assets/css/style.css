@@ -3045,6 +3045,10 @@ small.text {
   -o-object-fit: contain;
   object-fit: contain;
 }
+.navbar.style-4 .navbar-brand img {
+  max-width: 80%;
+  max-height: 80%;
+}
 .navbar.style-4 .navbar-nav .nav-item .nav-link {
   position: relative;
   color: #000;
