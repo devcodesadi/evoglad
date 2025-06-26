@@ -1898,7 +1898,16 @@ small.text {
   -ms-flex-pack: center;
   justify-content: center;
   cursor: pointer;
+  color: white;
+  background-color: var(--primary-green);
 }
+
+.btn:hover {
+  color: white;
+    transform: translateY(-2px);   
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+}
+
 .butn span,
 .btn span {
   font-size: 14px;
@@ -1996,11 +2005,7 @@ small.text {
 .btn.sm-butn span {
   font-size: 12px;
 }
-.butn:hover,
-.btn:hover {
-  background: blue;
-  border-color: transparent !important;
-}
+
 
 .butn:hover span,
 .btn:hover span {
@@ -2234,10 +2239,10 @@ small.text {
 .section-head.style-4 h5 {
   font-size: 16px;
   font-weight: bold;
-  color: #a44cee;
+  color: var(--color-green);
   display: inline-block;
   text-transform: capitalize;
-  margin: 0 10px;
+  
 }
 
 /* --------------- section style-5 --------------- */
@@ -3888,9 +3893,6 @@ header.style-4 .content .info .text {
   line-height: 27px;
 }
 
-header.style-4 .content .info .d-flex .btn:hover {
-  background-color: var(--color-green2) !important;
-}
 
 header.style-4 .content .info .play-btn {
   display: -webkit-box;
@@ -11836,19 +11838,18 @@ header.style-16 .screen-img .diamond {
     left top,
     right top,
     from(#00c057),
-
     to(#009a5c)
   );
   background-image: -o-linear-gradient(
     left,
     #00c057 0%,
-    
+
     #009a5c 100%
   );
   background-image: linear-gradient(
     to right,
     #00c057 0%,
-    
+
     #009a5c 100%
   );
 }
@@ -21880,10 +21881,6 @@ footer.style-16 .form-check-input:checked {
 
 /* Mobile-first optimizations */
 @media (max-width: 575px) {
-  
-
-  
-
   .automation-item {
     padding: 0.875rem;
     gap: 0.625rem;
@@ -22182,9 +22179,6 @@ footer.style-16 .form-check-input:checked {
   }
 }
 
-
-
-
 /* channel section (ecBot platform channels) */
 
 .fade-in {
@@ -22253,10 +22247,6 @@ footer.style-16 .form-check-input:checked {
     flex-direction: column;
   }
 }
-
-
-
-
 
 /* pain point section */
 /* Carousel Container */
@@ -22544,7 +22534,7 @@ footer.style-16 .form-check-input:checked {
 .btn-cta {
   width: 100%;
   padding: 1.25rem 2rem;
-  background: linear-gradient(135deg, var(--whatsapp-green), #20b959);
+  background-color: var(--primary-green);
   color: white;
   border: none;
   border-radius: 12px;
