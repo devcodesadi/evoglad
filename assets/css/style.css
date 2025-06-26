@@ -5353,7 +5353,7 @@ header.style-16 .screen-img .diamond {
   padding: 60px 0;
 }
 .about.style-4 .content ul li .about3 {
-  color: var(--whatsapp-dark);
+  color: var(--color-green4);
 }
 .about.style-4 .content ul li h6 {
   font-size: 14px;
@@ -8234,7 +8234,7 @@ header.style-16 .screen-img .diamond {
   color: var(--color-green4);
 }
 .testimonials.style-4 .content .numbs .num-card p {
-  font-size: 11px;
+  font-size: 14px;
   color: #666;
   margin-top: 5px;
 }
@@ -8326,6 +8326,7 @@ header.style-16 .screen-img .diamond {
   font-size: 10px;
 }
 .testimonials.style-4 .content .testi-cards .client_card .inf_content h6 {
+  color: var(--color-green2);
   font-weight: bold;
   font-size: 22px;
   margin-bottom: 5px;
@@ -22184,6 +22185,11 @@ footer.style-16 .form-check-input:checked {
   }
 }
 
+
+
+
+/* channel section (ecBot platform channels) */
+
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -22207,6 +22213,13 @@ footer.style-16 .form-check-input:checked {
 
 .platform .col:hover {
   transform: translateY(-5px);
+}
+
+.platform a {
+  color: var(--text-gray);
+}
+.platform a:hover {
+  color: var(--color-green);
 }
 
 /* Platform-specific colors */
@@ -22243,6 +22256,10 @@ footer.style-16 .form-check-input:checked {
     flex-direction: column;
   }
 }
+
+
+
+
 
 /* pain point section */
 /* Carousel Container */
