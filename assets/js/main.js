@@ -1350,131 +1350,101 @@ document.querySelectorAll(".feature-card").forEach((card) => {
 });
 
 // pain point section
-
 let currentSlide = 0;
-const cards = document.querySelectorAll(".benefit-card");
-const totalCards = cards.length;
-const cardsPerView = getCardsPerView();
-const maxSlide = Math.max(0, totalCards - cardsPerView);
+let cardsPerView = 3;
 
 function getCardsPerView() {
-  if (window.innerWidth <= 480) return 1;
   if (window.innerWidth <= 768) return 1;
   if (window.innerWidth <= 1024) return 2;
   return 3;
 }
 
+function getMaxSlides() {
+  const totalCards = document.querySelectorAll(".benefit-card").length;
+  return Math.max(0, Math.ceil(totalCards / cardsPerView) - 1);
+}
+
+function initCarousel() {
+  cardsPerView = getCardsPerView();
+  createDots();
+  updateCarousel();
+}
+
 function createDots() {
   const dotsContainer = document.getElementById("carouselDots");
   dotsContainer.innerHTML = "";
+  const maxSlides = getMaxSlides();
 
-  const totalDots = maxSlide + 1;
-  for (let i = 0; i <= maxSlide; i++) {
+  for (let i = 0; i <= maxSlides; i++) {
     const dot = document.createElement("div");
-    dot.className = "dot";
-    if (i === 0) dot.classList.add("active");
-    dot.addEventListener("click", () => goToSlide(i));
+    dot.className = "carousel-dot";
+    if (i === currentSlide) dot.classList.add("active");
+    dot.onclick = () => goToSlide(i);
     dotsContainer.appendChild(dot);
   }
 }
 
-function updateCarousel() {
-  const track = document.getElementById("carouselTrack");
-  const cardWidth = cards[0].offsetWidth + 24; // card width + gap
-  track.style.transform = `translateX(-${currentSlide * cardWidth}px)`;
-
-  // Update dots
-  document.querySelectorAll(".dot").forEach((dot, index) => {
-    dot.classList.toggle("active", index === currentSlide);
-  });
-
-  // Update button states
-  document.getElementById("prevBtn").disabled = currentSlide === 0;
-  document.getElementById("nextBtn").disabled = currentSlide === maxSlide;
-}
-
 function moveCarousel(direction) {
+  const maxSlides = getMaxSlides();
   currentSlide += direction;
-  currentSlide = Math.max(0, Math.min(currentSlide, maxSlide));
+
+  if (currentSlide > maxSlides) currentSlide = 0;
+  if (currentSlide < 0) currentSlide = maxSlides;
+
   updateCarousel();
 }
 
 function goToSlide(slideIndex) {
-  currentSlide = slideIndex;
+  currentSlide = Math.min(slideIndex, getMaxSlides());
   updateCarousel();
 }
 
-// Auto-advance carousel
-let autoAdvanceInterval;
+function updateCarousel() {
+  const track = document.getElementById("carouselTrack");
+  const cards = document.querySelectorAll(".benefit-card");
+  const maxSlides = getMaxSlides();
 
-function startAutoAdvance() {
-  autoAdvanceInterval = setInterval(() => {
-    if (currentSlide < maxSlide) {
-      moveCarousel(1);
-    } else {
-      currentSlide = 0;
-      updateCarousel();
-    }
+  if (!cards.length) return;
+
+  const cardWidth = cards[0].offsetWidth;
+  const gap = 32;
+  const fullCardWidth = cardWidth + gap;
+
+  track.style.transform = `translateX(-${currentSlide * fullCardWidth}px)`;
+
+  // Update dots
+  document.querySelectorAll(".carousel-dot").forEach((dot, index) => {
+    dot.classList.toggle("active", index === currentSlide);
+  });
+
+  // Optional: handle button disable state
+  document.getElementById("prevBtn").disabled = currentSlide === 0;
+  document.getElementById("nextBtn").disabled = currentSlide === maxSlides;
+}
+
+// Auto-play
+function autoPlay() {
+  setInterval(() => {
+    moveCarousel(1);
   }, 5000);
 }
 
-function stopAutoAdvance() {
-  clearInterval(autoAdvanceInterval);
-}
+// Init
+document.addEventListener("DOMContentLoaded", () => {
+  initCarousel();
+  autoPlay();
+});
 
-// Initialize carousel
-createDots();
-updateCarousel();
-startAutoAdvance();
-
-// Pause auto-advance on hover
-const carouselContainer = document.querySelector(".carousel-container");
-carouselContainer.addEventListener("mouseenter", stopAutoAdvance);
-carouselContainer.addEventListener("mouseleave", startAutoAdvance);
-
-// Handle window resize
+let resizeTimeout;
 window.addEventListener("resize", () => {
-  const newCardsPerView = getCardsPerView();
-  if (newCardsPerView !== cardsPerView) {
-    location.reload(); // Simple solution for responsive recalculation
-  }
-});
-
-// Touch/swipe support for mobile
-let startX = 0;
-let currentX = 0;
-let isDragging = false;
-
-carouselContainer.addEventListener("touchstart", (e) => {
-  startX = e.touches[0].clientX;
-  isDragging = true;
-  stopAutoAdvance();
-});
-
-carouselContainer.addEventListener("touchmove", (e) => {
-  if (!isDragging) return;
-  currentX = e.touches[0].clientX;
-});
-
-carouselContainer.addEventListener("touchend", () => {
-  if (!isDragging) return;
-  isDragging = false;
-
-  const deltaX = startX - currentX;
-  if (Math.abs(deltaX) > 50) {
-    if (deltaX > 0 && currentSlide < maxSlide) {
-      moveCarousel(1);
-    } else if (deltaX < 0 && currentSlide > 0) {
-      moveCarousel(-1);
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    const newCardsPerView = getCardsPerView();
+    if (newCardsPerView !== cardsPerView) {
+      cardsPerView = newCardsPerView;
+      currentSlide = 0;
+      createDots();
     }
-  }
-
-  startAutoAdvance();
+    updateCarousel();
+  }, 250);
 });
-
-
-
-
-
-
-
