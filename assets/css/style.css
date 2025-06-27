@@ -7294,13 +7294,13 @@ header.style-16 .screen-img .diamond {
   padding: 0 30px;
 }
 .projects.style-6 .content {
-  background-color: #f1f2fa;
   position: relative;
   padding: 100px 0;
   border-radius: 30px;
 }
 
 .project-card.style-6 {
+  box-shadow: 0 4px 20px rgba(0, 179, 107, 0.08);
   border-radius: 8px;
   overflow: hidden;
   display: block;
@@ -7324,7 +7324,7 @@ header.style-16 .screen-img .diamond {
   object-fit: cover;
 }
 .project-card.style-6 .info {
-  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 179, 107, 0.08);
   padding: 40px;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -20432,6 +20432,7 @@ footer.style-16 .form-check-input:checked {
   }
 
   .projects.style-6 {
+
     overflow: hidden;
     padding: 0;
   }
@@ -22254,7 +22255,132 @@ footer.style-16 .form-check-input:checked {
 
 /* pain point section */
 /* Carousel Container */
-.carousel-container {
+
+
+.image-wrapper {
+  max-width: 100%;
+  height: 65vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+@media screen and (min-width:576px) {
+  .carousel-inner {
+    display: flex;
+  }
+
+  .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100%3)
+  }
+
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+
+.card {
+  margin: 0.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .carousel-container {
   position: relative;
   overflow: hidden;
   border-radius: 16px;
@@ -22266,10 +22392,10 @@ footer.style-16 .form-check-input:checked {
   gap: 24px;
   transition: transform 0.4s ease;
   padding: 20px 10px;
-}
+} */
 
 /* Card Styles */
-.benefit-card {
+/* .benefit-card {
   flex: 0 0 calc(33.333% - 16px);
   background: white;
   border-radius: 16px;
@@ -22286,14 +22412,14 @@ footer.style-16 .form-check-input:checked {
   transform: translateY(-8px);
   box-shadow: 0 12px 40px rgba(0, 179, 107, 0.15);
   border-color: rgba(39, 202, 145, 0.2);
-}
+} */
 
 /* Image Container */
-.card-image {
+/* .card-image {
   width: 100%;
   height: 200px;
-  padding: 16px;
-  background: linear-gradient(135deg, #f3fcf8 0%, #e6f7ed 100%);
+
+  background-color: var(--bg-green);
   position: relative;
 }
 
@@ -22302,10 +22428,10 @@ footer.style-16 .form-check-input:checked {
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
-}
+} */
 
 /* Card Content */
-.card-content {
+/* .card-content {
   padding: 24px;
   flex: 1;
   display: flex;
@@ -22333,10 +22459,10 @@ footer.style-16 .form-check-input:checked {
 .highlight-stat {
   color: #00b36b;
   font-weight: 600;
-}
+} */
 
 /* Carousel Controls */
-.carousel-controls {
+/* .carousel-controls {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22387,10 +22513,10 @@ footer.style-16 .form-check-input:checked {
 .carousel-dot.active {
   background: #00b36b;
   transform: scale(1.2);
-}
+} */
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .benefit-card {
     flex: 0 0 calc(50% - 12px);
     min-height: 380px;
@@ -22451,10 +22577,10 @@ footer.style-16 .form-check-input:checked {
     width: 40px;
     height: 40px;
   }
-}
+} */
 
 /* Touch scrolling for mobile */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .carousel-container {
     overflow-x: auto;
     overflow-y: hidden;
@@ -22471,6 +22597,8 @@ footer.style-16 .form-check-input:checked {
     flex: 0 0 300px;
   }
 }
+ */
+
 /* cta section */
 
 .cta-form-container {
@@ -23157,3 +23285,6 @@ footer.style-16 .form-check-input:checked {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+
