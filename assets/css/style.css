@@ -5409,7 +5409,7 @@ header.style-16 .screen-img .diamond {
 }
 .about.style-4 .content {
   position: relative;
-  padding: 30px 0;
+  padding: 10px 0;
 }
 .about.style-4 .content ul li .about3 {
   color: var(--color-green4);
@@ -22255,7 +22255,7 @@ footer.style-16 .form-check-input:checked {
   flex: 1;
   margin: 10px;
   background-color: #f9f9f9;
-  padding: 20px 40px 30px;
+  padding: 10px 40px ;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
