@@ -107,6 +107,17 @@ TABLE OF CONTENTS:-
   --secondry-green2: #00cd7a;
   --border-light: #e5e7eb;
   --white: #ffffff;
+  --color-soft-blue: #e6f0ff;
+  --color-soft-green: #e6fff2;
+  --color-soft-yellow: #fffbe6;
+  --color-soft-pink: #ffe6f0;
+  --color-soft-purple: #f3e6ff;
+  --color-soft-orange: #fff0e6;
+  --color-soft-cyan: #e6ffff;
+  --color-soft-mint: #e6fff9;
+  --color-soft-lavender: #f0e6ff;
+  --color-soft-beige: #f9f5e6;
+  
 }
 
 .color-main {
@@ -453,6 +464,48 @@ TABLE OF CONTENTS:-
 .hover-red2:hover * {
   color: #fff;
 }
+
+
+.bg-soft-blue {
+  background-color: var(--color-soft-blue) !important;
+}
+
+.bg-soft-green {
+  background-color: var(--color-soft-green) !important;
+}
+
+.bg-soft-yellow {
+  background-color: var(--color-soft-yellow) !important;
+}
+
+.bg-soft-pink {
+  background-color: var(--color-soft-pink) !important;
+}
+
+.bg-soft-purple {
+  background-color: var(--color-soft-purple) !important;
+}
+
+.bg-soft-orange {
+  background-color: var(--color-soft-orange) !important;
+}
+
+.bg-soft-cyan {
+  background-color: var(--color-soft-cyan) !important;
+}
+
+.bg-soft-mint {
+  background-color: var(--color-soft-mint) !important;
+}
+
+.bg-soft-lavender {
+  background-color: var(--color-soft-lavender) !important;
+}
+
+.bg-soft-beige {
+  background-color: var(--color-soft-beige) !important;
+}
+
 
 /* ===============================================================
 			[ * global Section ] 
@@ -1551,7 +1604,7 @@ small.text {
 }
 
 .pb-70 {
-  padding-bottom: 70px !important;
+  padding-bottom: 30px !important;
 }
 
 .pb-80 {
@@ -5356,7 +5409,7 @@ header.style-16 .screen-img .diamond {
 }
 .about.style-4 .content {
   position: relative;
-  padding: 60px 0;
+  padding: 30px 0;
 }
 .about.style-4 .content ul li .about3 {
   color: var(--color-green4);
@@ -7295,7 +7348,7 @@ header.style-16 .screen-img .diamond {
 }
 .projects.style-6 .content {
   position: relative;
-  padding: 100px 0;
+  padding: 60px 0;
   border-radius: 30px;
 }
 
@@ -7305,6 +7358,7 @@ header.style-16 .screen-img .diamond {
   overflow: hidden;
   display: block;
   margin: 0 15px;
+  height: 450px;
 }
 .project-card.style-6:hover {
   -webkit-box-shadow: 0px 40px 35px 0px #51558622;
@@ -7325,18 +7379,18 @@ header.style-16 .screen-img .diamond {
 }
 .project-card.style-6 .info {
   box-shadow: 0 4px 20px rgba(0, 179, 107, 0.08);
-  padding: 40px;
+  padding: 20px;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  height: 100%;
 }
 .project-card.style-6 .info .title {
   color: #000;
-  font-size: 21px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
-.project-card.style-6 .info .title:hover {
-  color: var(--whatsapp-green);
-}
+
 .project-card.style-6 .info .title:hover a {
   color: var(--whatsapp-green);
 }
@@ -7347,7 +7401,7 @@ header.style-16 .screen-img .diamond {
   margin-bottom: 10px;
 }
 .project-card.style-6 .info .text {
-  font-size: 12px;
+  font-size: 14px;
   color: #666;
   margin-bottom: 25px;
 }
