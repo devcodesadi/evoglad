@@ -14795,6 +14795,13 @@ footer.style-4 .foot {
   border-bottom: 1px solid #9999;
   padding: 30px 0;
 }
+
+footer.style-4 .foot img {
+  width: 70%;
+  height: 70%;
+  padding: 0px 10px;
+}
+
 footer.style-4 .foot .links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23342,3 +23349,26 @@ img {
 
 
 
+
+
+
+/************footer social icons************/
+
+
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--primary-green);
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: var(--whatsapp-dark); /* hover effect */
+}
