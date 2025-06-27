@@ -22272,12 +22272,13 @@ footer.style-16 .form-check-input:checked {
   transform: translateY(-5px);
 }
 
-.platform a {
-  color: var(--text-gray);
+.platform .btn {
+  color: var(--white);
+  background-color: var(--secondry-green2);
+  padding: 6px 14px;
+  border: none;
 }
-.platform a:hover {
-  color: var(--color-green);
-}
+
 
 /* Platform-specific colors */
 
