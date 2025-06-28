@@ -77,13 +77,13 @@ TABLE OF CONTENTS:-
   --color-main: #25d366;
   --whatsapp-green: #25d366;
   --color-primary: #128c7e;
-  --color-secondary: #02b5ff;
+  --color-secondary: #25d366;
   --color-green4: #00b36b;
   --color-blue7: #8169f1;
   --color-blue8: #291554;
   --color-lightBlue: #15f1ff;
   --color-darkBlue: #010049;
-  --color-darkBlue2: #1f227d;
+  --color-darkBlue2: #25d366;
   --color-orange1: #ff7a41;
   --color-orange2: #f6c463;
   --color-orange3: #f9a41f;
@@ -635,6 +635,7 @@ h6 {
 
 body a:hover {
   text-decoration: none;
+  color: var(--color-green);
 }
 
 body a:focus {
@@ -645,6 +646,9 @@ body ul {
   list-style-type: none;
   margin: 0;
 }
+
+
+
 
 .btn-default:active,
 .btn-default:active:focus,
@@ -3042,7 +3046,7 @@ small.text {
 .navbar.style-2 .dropdown-menu .dropdown-item.active,
 .navbar.style-2 .dropdown-menu .dropdown-item:active,
 .navbar.style-2 .dropdown-menu .dropdown-item:hover {
-  background-color: #010049;
+  background-color: var(--color-green);
 }
 
 .navbar.style-3 {
@@ -3098,10 +3102,23 @@ small.text {
   -o-object-fit: contain;
   object-fit: contain;
 }
+
 .navbar.style-4 .navbar-brand img {
   max-width: 80%;
   max-height: 80%;
 }
+
+
+
+
+.navbar.style-4 .dropdown a:active,
+.navbar.style-4 .dropdown a:focus {
+  background-color: var(--color-green) !important;
+  color: white;
+  outline: none;
+}
+
+
 .navbar.style-4 .navbar-nav .nav-item .nav-link {
   position: relative;
   color: #000;
@@ -3121,6 +3138,8 @@ small.text {
   -ms-transform: translateX(-50%) translateY(0);
   transform: translateX(-50%) translateY(0);
 }
+
+
 .navbar.style-4 .navbar-nav .nav-item .nav-link .hot {
   position: absolute;
   font-size: 8px;
@@ -5409,7 +5428,7 @@ header.style-16 .screen-img .diamond {
 }
 .about.style-4 .content {
   position: relative;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 .about.style-4 .content ul li .about3 {
   color: var(--color-green4);
@@ -11418,6 +11437,11 @@ header.style-16 .screen-img .diamond {
 .faq.style-3 .accordion-item .accordion-button::after {
   background-size: 15px;
 }
+
+.accordion-button:not(.collapsed)::after {
+  filter: invert(50%) sepia(67%) saturate(507%) hue-rotate(88deg) brightness(96%) contrast(92%);
+}
+
 .faq.style-3 .accordion-item .accordion-button:not(.collapsed) {
   background-color: #fff;
   color: var(--color-green);
@@ -18533,6 +18557,8 @@ footer.style-16 .form-check-input:checked {
   .accordion-button:not(.collapsed)::after {
   content: "";
 }
+
+
 .faq-page.style-5 .faq-body .faq-questions .accordion-item .accordion-body {
   font-size: 16px;
   color: #666;
@@ -21892,7 +21918,7 @@ footer.style-16 .form-check-input:checked {
 
   .section-head h2 {
     font-size: 2.25rem;
-    margin-bottom: 1rem;
+
   }
 
   .section-subtitle {
@@ -22207,7 +22233,6 @@ footer.style-16 .form-check-input:checked {
   .section-subtitle {
     font-size: 0.9rem;
     color: var(--text-muted);
-    margin-bottom: 0.5rem;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -22272,12 +22297,6 @@ footer.style-16 .form-check-input:checked {
   transform: translateY(-5px);
 }
 
-.platform .btn {
-  color: var(--white);
-  background-color: var(--secondry-green2);
-  padding: 6px 14px;
-  border: none;
-}
 
 
 /* Platform-specific colors */
