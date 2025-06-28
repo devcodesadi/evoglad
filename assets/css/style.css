@@ -2291,7 +2291,7 @@ small.text {
 .section-head.style-4 h2 span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-color: var(--color-green4);
+  background-image: linear-gradient(135deg, #00cd7a, #00b36b);
 }
 .section-head.style-4 h5 {
   font-size: 16px;
@@ -23394,4 +23394,20 @@ img {
 
 .social-icons a:hover {
   background-color: var(--whatsapp-dark); /* hover effect */
+}
+
+
+
+
+/********** #how-we-help section customise*************/
+
+#how-we-help .section-head {
+  text-align: center;
+}
+
+
+#how-we-help .section-subtitle {
+  margin: 30px;
+  max-width: 100%;
+  text-align: center;
 }
