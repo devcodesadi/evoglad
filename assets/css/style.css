@@ -11438,6 +11438,9 @@ header.style-16 .screen-img .diamond {
   background-size: 15px;
 }
 
+
+
+
 .accordion-button:not(.collapsed)::after {
   filter: invert(50%) sepia(67%) saturate(507%) hue-rotate(88deg) brightness(96%) contrast(92%);
 }
