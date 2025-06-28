@@ -2291,7 +2291,7 @@ small.text {
 .section-head.style-4 h2 span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(135deg, #00cd7a, #00b36b);
+  background-color: var(--color-green4);
 }
 .section-head.style-4 h5 {
   font-size: 16px;
